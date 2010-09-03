@@ -26,9 +26,10 @@
        R objects into LaTeX representations. <pkg>Hmisc</pkg> also includes methods for 
        translating strings to proper LaTeX markup (e.g., ">=" to "$\geq$"). Animations
        can be inserted into LaTeX documents being converted to PDF via the  
-       <pkg>animation</pkg> package. The <pkg>tikzDevice</pkg> package can convert R graphics
-       to native LaTeX code and the <code>pictex</code> function in the base grDevices package
-       is a PicTeX graphics driver.
+       <pkg>animation</pkg> package. The <pkg>tikzDevice</pkg> and <pkg>pgfSweave</pkg> 
+       packages can convert R graphics to native LaTeX code while 
+       the <code>pictex</code> function in the base grDevices package is a PicTeX graphics 
+       driver.
       </li>
       <li><i>HTML Markup</i>: 
        The <pkg>R2HTML</pkg> package
@@ -44,6 +45,15 @@
        Many word processors can be used to translate the ODF document to other formats 
        (e.g., Word, PDF, HTML, etc.)
       </li>
+      <li><i>Microsoft Formats</i>:
+       The <pkg>R2wd</pkg> package for Windows can be used to communicate between R and Word
+       via the COM interface. Document elements (e.g. sections, text, images, etc) that  
+       are created in R can be inserted into the document from R. Two commercial R products
+       that work with RTF and Word are
+       <a href="http://www.smartsystems.ro/rtfgen">RTFGen</a> and
+       <a href="http://inferenceforr.com/">Inference for R</a>, respectively. The output from other
+       packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also be opened by Word.       
+      </li>       
       <li><i>Plain Text Formats</i>: 
        R code and output in <code>Sweave</code> files can be converted into 
        <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> and other structured 
@@ -60,7 +70,7 @@
       <li><i>Caching of R Objects</i>: 
        The <pkg>cacheSweave</pkg> and <bioc>weaver</bioc> packages allow caching of specific
        code chunks. The  <pkg>cacher</pkg> package can also be used but is not integrated
-       with <code>Sweave</code>.
+       with <code>Sweave</code>. <pkg>pgfSweave</pkg> can also cache graphics.
        The <pkg>SRPM</pkg> package (for shared reproducibility package management) creates 
        an R package that organize the results of an <code>Sweave</code> document into different 
        directories (e.g., article, figures, etc).
@@ -121,6 +131,7 @@
     <pkg>quantreg</pkg>
     <pkg priority="core">R2HTML</pkg>
     <pkg>r2lh</pkg>
+    <pkg>R2wd</pkg>
     <pkg>reporttools</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>SRPM</pkg>
