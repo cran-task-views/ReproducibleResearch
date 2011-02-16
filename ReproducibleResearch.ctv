@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2010-10-26</version>
+  <version>2011-02-16</version>
   
   <info>
     <p>
@@ -29,7 +29,8 @@
        <pkg>animation</pkg> package. The <pkg>tikzDevice</pkg> and <pkg>pgfSweave</pkg> 
        packages can convert R graphics to native LaTeX code while 
        the <code>pictex</code> function in the base grDevices package is a PicTeX graphics 
-       driver.
+       driver. The <pkg>makesweave</pkg> package for Linux streamlines the generation of 
+       Sweave files using <tt>make</tt>.
       </li>
       <li><i>HTML Markup</i>: 
        The <pkg>R2HTML</pkg> package
@@ -37,8 +38,6 @@
        Both <pkg>R2HTML</pkg> and <pkg>hwriter</pkg> can be used to build HTML pages sequentially.
        <pkg>R2HTML</pkg>, <pkg>xtable</pkg> and <pkg>hwriter</pkg> can also convert some 
        R objects into HTML representations.
-       The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches 
-       to embedding R code into HTML.
       </li>
       <li><i>ODF Markup</i>: 
        The <pkg>odfWeave</pkg>  package extends <code>Sweave</code> to the 
@@ -78,6 +77,9 @@
        an R package that organize the results of an <code>Sweave</code> document into different 
        directories (e.g., article, figures, etc).
       </li>
+      <li>
+       The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches 
+       to embedding R code into various markups.
     </ul>
     <p>
       An incomplete list of packages which facilitate literate programming for specific 
