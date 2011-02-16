@@ -77,7 +77,7 @@
        an R package that organize the results of an <code>Sweave</code> document into different 
        directories (e.g., article, figures, etc).
       </li>
-      <li>
+      <li><i>Other Approaches</i>: 
        The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches 
        to embedding R code into various markups.
     </ul>
