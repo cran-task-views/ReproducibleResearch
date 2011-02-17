@@ -80,6 +80,7 @@
       <li><i>Other Approaches</i>: 
        The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches 
        to embedding R code into various markups.
+      </li>
     </ul>
     <p>
       An incomplete list of packages which facilitate literate programming for specific 
