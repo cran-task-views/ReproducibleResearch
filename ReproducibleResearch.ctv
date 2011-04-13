@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2011-02-16</version>
+  <version>2011-04-13</version>
   
   <info>
     <p>
@@ -59,8 +59,7 @@
       <li><i>Plain Text Formats</i>: 
        R code and output in <code>Sweave</code> files can be converted into 
        <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> and other structured 
-       text formats using the <pkg>ascii</pkg> package. The <pkg>cxxPack</pkg> package
-       enables C++ code to be used in code chunks.
+       text formats using the <pkg>ascii</pkg> package.
       </li>
       <li><i>Syntax Highlighting</i>: 
        The <pkg>highlight</pkg> package can render R 
@@ -125,7 +124,6 @@
     <pkg>apsrtable</pkg>
     <pkg>brew</pkg>
     <pkg>cacheSweave</pkg>
-    <pkg>cxxPack</pkg>
     <pkg priority="core">Design</pkg>
     <pkg>exams</pkg>
     <pkg>highlight</pkg>
