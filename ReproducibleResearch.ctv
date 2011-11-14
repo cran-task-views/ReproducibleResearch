@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2011-04-13</version>
+  <version>2011-11-14</version>
   
   <info>
     <p>
@@ -101,7 +101,7 @@
 	<pkg>memisc</pkg> packages.
       </li>
       <li>
-        The <pkg>xtable</pkg>, <pkg>Design</pkg> and <pkg>rms</pkg> packages provide LaTeX 
+        The <pkg>xtable</pkg> and <pkg>rms</pkg> packages provide LaTeX 
         representations of some common models (e.g., Cox proportional hazards model, etc.). 
         For example, processing an <code>aov</code> object with the <code>xtable</code>
         function will generate LaTeX markup of the ANOVA table. Similalry, methods exist
@@ -124,7 +124,6 @@
     <pkg>apsrtable</pkg>
     <pkg>brew</pkg>
     <pkg>cacheSweave</pkg>
-    <pkg priority="core">Design</pkg>
     <pkg>exams</pkg>
     <pkg>highlight</pkg>
     <pkg>hwriter</pkg>
