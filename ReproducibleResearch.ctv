@@ -22,15 +22,18 @@
     </p>
     <ul>
       <li><i>LaTeX Markup</i>: 
-       The <pkg>Hmisc</pkg> and <pkg>xtable</pkg> packages contain functions to write
-       R objects into LaTeX representations. <pkg>Hmisc</pkg> also includes methods for 
-       translating strings to proper LaTeX markup (e.g., ">=" to "$\geq$"). Animations
-       can be inserted into LaTeX documents being converted to PDF via the  
-       <pkg>animation</pkg> package. The <pkg>tikzDevice</pkg> and <pkg>pgfSweave</pkg> 
-       packages can convert R graphics to native LaTeX code while 
-       the <code>pictex</code> function in the base grDevices package is a PicTeX graphics 
-       driver. The <pkg>makesweave</pkg> package for Linux streamlines the generation of 
-       Sweave files using <tt>make</tt>.
+       The <pkg>Hmisc</pkg>, <pkg>xtable</pkg> and <pkg>tables</pkg>
+       packages contain functions to write R objects into LaTeX
+       representations. <pkg>Hmisc</pkg> also includes methods for
+       translating strings to proper LaTeX markup (e.g., ">=" to
+       "$\geq$"). Animations can be inserted into LaTeX documents
+       being converted to PDF via the <pkg>animation</pkg>
+       package. The <pkg>tikzDevice</pkg> and <pkg>pgfSweave</pkg>
+       packages can convert R graphics to native LaTeX code while the
+       <code>pictex</code> function in the base grDevices package is a
+       PicTeX graphics driver. The <pkg>makesweave</pkg> package for
+       Linux streamlines the generation of Sweave files using
+       <tt>make</tt>.
       </li>
       <li><i>HTML Markup</i>: 
        The <pkg>R2HTML</pkg> package
@@ -144,6 +147,7 @@
     <pkg>SRPM</pkg>
     <pkg>svSweave</pkg>
     <pkg>SweaveListingUtils</pkg>
+    <pkg>tables</pkg>
     <pkg>TeachingSampling</pkg>
     <pkg>tikzDevice</pkg>
     <pkg priority="core">xtable</pkg>
