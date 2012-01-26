@@ -53,11 +53,15 @@
        The <pkg>R2wd</pkg> and <pkg>R2PPT</pkg> packages for Windows can be used to communicate 
        between R and Word or PowerPoint
        via the COM interface. Document elements (e.g. sections, text, images, etc) that  
-       are created in R can be inserted into the document from R. Two commercial R products
-       that work with RTF and Word are
-       <a href="http://www.smartsystems.ro/rtfgen">RTFGen</a> and
-       <a href="http://inferenceforr.com/">Inference for R</a>, respectively. The output from other
-       packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also be opened by Word.       
+       are created in R can be inserted into the document from R. Commercial R products
+       that work with RTF and/or Word are
+       <a href="http://www.smartsystems.ro/rtfgen">RTFGen</a>,
+       <a href="http://inferenceforr.com/">Inference for R</a>
+       and <a href="http://rcom.univie.ac.at/">SWord</a> (installed using the package
+       <pkg>SWordInstaller</pkg>).The output from other
+       packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also be opened by Word.   
+       <a href="http://rcom.univie.ac.at/">RExcel</a> (installed using the package
+       <pkg>RExcelInstaller</pkg>) can integrate code with Microsoft Excel.
       </li>       
       <li><i>Plain Text Formats</i>: 
        R code and output in <code>Sweave</code> files can be converted into 
@@ -79,9 +83,12 @@
        an R package that organize the results of an <code>Sweave</code> document into different 
        directories (e.g., article, figures, etc).
       </li>
-      <li><i>Other Approaches</i>: 
+      <li><i>Others</i>: 
        The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches 
-       to embedding R code into various markups.
+       to embedding R code into various markups.<pkg>knitr</pkg> is a comprehensive package 
+       derived from <code>Sweave</code> that includes code formatting, highlighting,
+       caching, fine control of graphics, conditional evaluation, multiple
+       markup formats and other features.
       </li>
     </ul>
     <p>
@@ -107,7 +114,7 @@
         The <pkg>xtable</pkg> and <pkg>rms</pkg> packages provide LaTeX 
         representations of some common models (e.g., Cox proportional hazards model, etc.). 
         For example, processing an <code>aov</code> object with the <code>xtable</code>
-        function will generate LaTeX markup of the ANOVA table. Similalry, methods exist
+        function will generate LaTeX markup of the ANOVA table. Similarly, methods exist
         for <code>glm</code>, <code>prcomp</code>, <code>ts</code> and other types of objects.
       </li> 
       <li>
@@ -131,6 +138,7 @@
     <pkg>highlight</pkg>
     <pkg>hwriter</pkg>
     <pkg priority="core">Hmisc</pkg>
+    <pkg>knitr</pkg>
     <pkg>memisc</pkg>
     <pkg>odfWeave</pkg>
     <pkg>odfWeave.survey</pkg>
@@ -143,10 +151,12 @@
     <pkg>R2PPT</pkg>
     <pkg>R2wd</pkg>
     <pkg>reporttools</pkg>
+    <pkg>RExcelInstaller</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>SRPM</pkg>
     <pkg>svSweave</pkg>
     <pkg>SweaveListingUtils</pkg>
+    <pkg>SWordInstaller</pkg>
     <pkg>tables</pkg>
     <pkg>TeachingSampling</pkg>
     <pkg>tikzDevice</pkg>
