@@ -50,18 +50,22 @@
        (e.g., Word, PDF, HTML, etc.)
       </li>
       <li><i>Microsoft Formats</i>:
-       The <pkg>R2wd</pkg> and <pkg>R2PPT</pkg> packages for Windows can be used to communicate 
-       between R and Word or PowerPoint
-       via the COM interface. Document elements (e.g. sections, text, images, etc) that  
-       are created in R can be inserted into the document from R. Commercial R products
-       that work with RTF and/or Word are
-       <a href="http://www.smartsystems.ro/rtfgen">RTFGen</a>,
-       <a href="http://inferenceforr.com/">Inference for R</a>
-       and <a href="http://rcom.univie.ac.at/">SWord</a> (installed using the package
-       <pkg>SWordInstaller</pkg>).The output from other
-       packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also be opened by Word.   
-       <a href="http://rcom.univie.ac.at/">RExcel</a> (installed using the package
-       <pkg>RExcelInstaller</pkg>) can integrate code with Microsoft Excel.
+       The <pkg>R2wd</pkg> and <pkg>R2PPT</pkg> packages for Windows
+       can be used to communicate between R and Word or PowerPoint via
+       the COM interface. Document elements (e.g. sections, text,
+       images, etc) that are created in R can be inserted into the
+       document from R. The <pkg>rtf</pkg> can also be used to create
+       RTF format documents directly from R. Commercial R products
+       that work with RTF and/or Word are <a
+       href="http://www.smartsystems.ro/rtfgen">RTFGen</a>, <a
+       href="http://inferenceforr.com/">Inference for R</a> and <a
+       href="http://rcom.univie.ac.at/">SWord</a> (installed using the
+       package <pkg>SWordInstaller</pkg>).The output from other
+       packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also
+       be opened by Word.  
+       <a href="http://rcom.univie.ac.at/">RExcel</a> (installed using
+       the package <pkg>RExcelInstaller</pkg>) can integrate code with
+       Microsoft Excel.
       </li>       
       <li><i>Plain Text Formats</i>: 
        R code and output in <code>Sweave</code> files can be converted into 
@@ -153,6 +157,7 @@
     <pkg>reporttools</pkg>
     <pkg>RExcelInstaller</pkg>
     <pkg priority="core">rms</pkg>
+    <pkg>rtf</pkg>
     <pkg>SRPM</pkg>
     <pkg>svSweave</pkg>
     <pkg>SweaveListingUtils</pkg>
