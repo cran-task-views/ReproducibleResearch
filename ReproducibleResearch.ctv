@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2012-05-15</version>
+  <version>2012-06-19</version>
   
   <info>
     <p>
@@ -73,9 +73,6 @@
        text formats using the <pkg>ascii</pkg> package.
       </li>
       <li><i>Syntax Highlighting</i>: 
-       The <pkg>highlight</pkg> package can render R 
-       code with more control over the results (e.g., syntax coloring, etc) in LaTeX
-       and HTML.
        The <pkg>SweaveListingUtils</pkg> package can also provide enhanced control over how
        R code chunks and their output are rendered in LaTeX.
       </li>
@@ -139,7 +136,6 @@
     <pkg>brew</pkg>
     <pkg>cacheSweave</pkg>
     <pkg>exams</pkg>
-    <pkg>highlight</pkg>
     <pkg>hwriter</pkg>
     <pkg priority="core">Hmisc</pkg>
     <pkg>knitr</pkg>
