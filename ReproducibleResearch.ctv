@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2012-07-10</version>
+  <version>2012-07-11</version>
   
   <info>
     <p>
@@ -28,8 +28,7 @@
        translating strings to proper LaTeX markup (e.g., ">=" to
        "$\geq$"). Animations can be inserted into LaTeX documents
        being converted to PDF via the <pkg>animation</pkg>
-       package. The <pkg>tikzDevice</pkg> 
-       package can convert R graphics to native LaTeX code while the
+       package. The
        <code>pictex</code> function in the base grDevices package is a
        PicTeX graphics driver. The <pkg>makesweave</pkg> package for
        Linux streamlines the generation of Sweave files using
@@ -163,7 +162,6 @@
     <pkg>SWordInstaller</pkg>
     <pkg>tables</pkg>
     <pkg>TeachingSampling</pkg>
-    <pkg>tikzDevice</pkg>
     <pkg priority="core">xtable</pkg>
   </packagelist>
 
