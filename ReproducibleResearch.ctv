@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2012-06-22</version>
+  <version>2012-07-10</version>
   
   <info>
     <p>
@@ -28,8 +28,8 @@
        translating strings to proper LaTeX markup (e.g., ">=" to
        "$\geq$"). Animations can be inserted into LaTeX documents
        being converted to PDF via the <pkg>animation</pkg>
-       package. The <pkg>tikzDevice</pkg> and <pkg>pgfSweave</pkg>
-       packages can convert R graphics to native LaTeX code while the
+       package. The <pkg>tikzDevice</pkg> 
+       package can convert R graphics to native LaTeX code while the
        <code>pictex</code> function in the base grDevices package is a
        PicTeX graphics driver. The <pkg>makesweave</pkg> package for
        Linux streamlines the generation of Sweave files using
@@ -82,7 +82,7 @@
       <li><i>Caching of R Objects</i>: 
        The <pkg>cacheSweave</pkg> and <bioc>weaver</bioc> packages allow caching of specific
        code chunks. The <pkg>cacher</pkg> and <pkg>R.cache</pkg> packages can also be used but are 
-       not integrated with <code>Sweave</code>. <pkg>pgfSweave</pkg> can also cache graphics.
+       not integrated with <code>Sweave</code>. 
        The <pkg>SRPM</pkg> package (for shared reproducibility package management) creates 
        an R package that organize the results of an <code>Sweave</code> document into different 
        directories (e.g., article, figures, etc).
@@ -146,7 +146,6 @@
     <pkg>memisc</pkg>
     <pkg>odfWeave</pkg>
     <pkg>odfWeave.survey</pkg>
-    <pkg>pgfSweave</pkg>
     <pkg>quantreg</pkg>
     <pkg>R.cache</pkg>
     <pkg>R.rsp</pkg>
