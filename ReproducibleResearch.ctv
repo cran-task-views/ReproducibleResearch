@@ -56,8 +56,7 @@
        that work with RTF and/or Word are <a
        href="http://www.smartsystems.ro/rtfgen">RTFGen</a>, <a
        href="http://inferenceforr.com/">Inference for R</a> and <a
-       href="http://rcom.univie.ac.at/">SWord</a> (installed using the
-       package <pkg>SWordInstaller</pkg>).The output from other
+       href="http://rcom.univie.ac.at/">SWord</a>.The output from other
        packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also
        be opened by Word.  
        <a href="http://rcom.univie.ac.at/">RExcel</a> can integrate code with
@@ -152,7 +151,6 @@
     <pkg>SRPM</pkg>
     <pkg>svSweave</pkg>
     <pkg>SweaveListingUtils</pkg>
-    <pkg>SWordInstaller</pkg>
     <pkg>tables</pkg>
     <pkg>TeachingSampling</pkg>
     <pkg priority="core">xtable</pkg>
