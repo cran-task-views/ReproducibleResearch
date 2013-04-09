@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2013-01-29</version>
+  <version>2013-04-09</version>
   
   <info>
     <p>
@@ -60,8 +60,7 @@
        package <pkg>SWordInstaller</pkg>).The output from other
        packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also
        be opened by Word.  
-       <a href="http://rcom.univie.ac.at/">RExcel</a> (installed using
-       the package <pkg>RExcelInstaller</pkg>) can integrate code with
+       <a href="http://rcom.univie.ac.at/">RExcel</a> can integrate code with
        Microsoft Excel.
       </li>       
       <li><i>Plain Text Formats</i>: 
@@ -148,7 +147,6 @@
     <pkg>R2PPT</pkg>
     <pkg>R2wd</pkg>
     <pkg>reporttools</pkg>
-    <pkg>RExcelInstaller</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>rtf</pkg>
     <pkg>SRPM</pkg>
