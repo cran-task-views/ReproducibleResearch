@@ -37,7 +37,8 @@
        has drivers that allow <code>Sweave</code> to process HTML documents via <code>Sweave</code>. 
        Both <pkg>R2HTML</pkg> and <pkg>hwriter</pkg> can be used to build HTML pages sequentially.
        <pkg>R2HTML</pkg>, <pkg>xtable</pkg> and <pkg>hwriter</pkg> can also convert some 
-       R objects into HTML representations.
+       R objects into HTML representations. <pkg>knitr</pkg> also has facilities to weave
+       R code with HTML as well as convert markdown to HTML. 
       </li>
       <li><i>ODF Markup</i>: 
        The <pkg>odfWeave</pkg>  package extends <code>Sweave</code> to the 
@@ -65,7 +66,9 @@
       <li><i>Plain Text Formats</i>: 
        R code and output in <code>Sweave</code> files can be converted into 
        <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> and other structured 
-       text formats using the <pkg>ascii</pkg> package.
+       text formats using the <pkg>ascii</pkg> package. The <pkg>markdown</pkg> and  
+       <pkg>knitr</pkg> packages have tools for 
+       <a href="http://daringfireball.net/projects/markdown/">markdown</a> format. 
       </li>
       <li><i>Syntax Highlighting</i>: 
        The <pkg>SweaveListingUtils</pkg> package can also provide enhanced control over how
@@ -84,7 +87,12 @@
        to embedding R code into various markups.<pkg>knitr</pkg> is a comprehensive package 
        derived from <code>Sweave</code> that includes code formatting, highlighting,
        caching, fine control of graphics, conditional evaluation, multiple
-       markup formats and other features.
+       markup formats and other features. The <pkg>pander</pkg> package can write R 
+       objects into <a href="http://johnmacfarlane.net/pandoc/README.html">Pandoc's 
+       markdown</a> and also to convert those or complex reports to PDF/HTML/docx/ODT. The 
+       <pkg>rapport</pkg> package builds on <pkg>pander</pkg> and provides a way to create 
+       reproducible statistical report templates with graphs, tables and annotations to 
+       be applied to any R data frame and export the results in different formats. 
       </li>
     </ul>
     <p>
@@ -134,10 +142,12 @@
     <pkg>exams</pkg>
     <pkg>hwriter</pkg>
     <pkg priority="core">Hmisc</pkg>
-    <pkg>knitr</pkg>
+    <pkg priority="core">knitr</pkg>
+    <pkg>markdown</pkg>
     <pkg>memisc</pkg>
     <pkg>odfWeave</pkg>
     <pkg>odfWeave.survey</pkg>
+    <pkg>pander</pkg>
     <pkg>quantreg</pkg>
     <pkg>R.cache</pkg>
     <pkg>R.rsp</pkg>
@@ -145,6 +155,7 @@
     <pkg>r2lh</pkg>
     <pkg>R2PPT</pkg>
     <pkg>R2wd</pkg>
+    <pkg>rapport</pkg>
     <pkg>reporttools</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>rtf</pkg>
