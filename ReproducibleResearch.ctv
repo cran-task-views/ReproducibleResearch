@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2013-04-18</version>
+  <version>2014-01-20</version>
   
   <info>
     <p>
@@ -30,7 +30,9 @@
        being converted to PDF via the <pkg>animation</pkg>
        package. The
        <code>pictex</code> function in the base grDevices package is a
-       PicTeX graphics driver.
+       PicTeX graphics driver and the <pkg>tikzDevice</pkg> can convert R graphics to
+       <a href="http://www.texample.net/tikz/ ">TikZ</a> markup. The <pkg>tth</pkg>
+       package can convert TeX to HTML. 
       </li>
       <li><i>HTML Markup</i>: 
        The <pkg>R2HTML</pkg> package
@@ -62,6 +64,8 @@
        be opened by Word.  
        <a href="http://rcom.univie.ac.at/">RExcel</a> can integrate code with
        Microsoft Excel.
+       Additionally, the <pkg>table1xls</pkg> can convert summary tables to 
+       Excel files. 
       </li>       
       <li><i>Plain Text Formats</i>: 
        R code and output in <code>Sweave</code> files can be converted into 
@@ -80,7 +84,8 @@
        not integrated with <code>Sweave</code>. 
        The <pkg>SRPM</pkg> package (for shared reproducibility package management) creates 
        an R package that organize the results of an <code>Sweave</code> document into different 
-       directories (e.g., article, figures, etc).
+       directories (e.g., article, figures, etc). <pkg>knitr</pkg> also has the ability to
+       cache the results of code chunks. 
       </li>
       <li><i>Others</i>: 
        The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches 
@@ -103,18 +108,19 @@
     </p>
     <ul>
       <li> 
-	The base R utils package has generic functions to convert objects to
-	LaTeX (via <code>toLatex</code>) and BibTeX (via <code>toBibtex</code>).
+  The base R utils package has generic functions to convert objects to
+  LaTeX (via <code>toLatex</code>) and BibTeX (via <code>toBibtex</code>).
+           The <pkg>bibtex</pkg> can also be used to parse BibTeX files. 
       </li>
       <li>
-	Functions for creating LaTeX representations of summary statistics and visualizations 
-	can be found in the <pkg>Hmisc</pkg>, <pkg>reporttools</pkg>, and <pkg>r2lh</pkg> packages.
-	<pkg>Hmisc</pkg> also has functions for marking up data frames and the <pkg>quantreg</pkg> 
-	and <pkg>memisc</pkg> packages can mark up matrices.
+  Functions for creating LaTeX representations of summary statistics and visualizations 
+  can be found in the <pkg>Hmisc</pkg>, <pkg>reporttools</pkg>, and <pkg>r2lh</pkg> packages.
+  <pkg>Hmisc</pkg> also has functions for marking up data frames and the <pkg>quantreg</pkg> 
+  and <pkg>memisc</pkg> packages can mark up matrices.
       </li>
       <li> 
-	Cross-tabulations can be converted to LaTeX code using the <pkg>Hmisc</pkg> and
-	<pkg>memisc</pkg> packages.
+  Cross-tabulations can be converted to LaTeX code using the <pkg>Hmisc</pkg> and
+  <pkg>memisc</pkg> packages.
       </li>
       <li>
         The <pkg>xtable</pkg> and <pkg>rms</pkg> packages provide LaTeX 
@@ -124,12 +130,25 @@
         for <code>glm</code>, <code>prcomp</code>, <code>ts</code> and other types of objects.
       </li> 
       <li>
-	The <pkg>quantreg</pkg> contains LaTeX markup functions for quantile regression 
-	fit summaries.
+  The <pkg>quantreg</pkg> contains LaTeX markup functions for quantile regression 
+  fit summaries.
       </li> 
       <li>Standardized exams can be created using the <pkg>exams</pkg> package</li>
       <li>The <pkg>odfWeave.survey</pkg> and <pkg>TeachingSampling</pkg> packages provide 
-      ODF and LaTeX functions, respectively, for survey sampling objects
+      ODF and LaTeX functions, respectively, for survey sampling objects. The 
+      <pkg>suRtex</pkg> package can create LaTeX markup of descriptive statistical summaries of
+      survey data. 
+      </li>
+      <li>The <pkg>texreg</pkg> has functions to create nice LaTeX and HTML representations
+      of one or more objects (e.g. <code>lm</code>, <code>lme4</code>, etc.). The 
+      <pkg>stargazer</pkg> has similar functionality for showing models and summary tables 
+      in LaTeX and ASCII. 
+      </li>
+      <li>
+      The <pkg>sparktex</pkg> package can create LaTeX representations of <a href="http://en.wikipedia.org/wiki/Sparkline">sparklines</a>. 
+      </li>
+      <li> LaTeX markup for several object types can be created using the <pkg>papeR</pkg>
+      package. 
       </li>
     </ul>
   </info>
@@ -138,6 +157,7 @@
     <pkg>animation</pkg>
     <pkg>ascii</pkg>
     <pkg>apsrtable</pkg>
+    <pkg>bibtex</pkg>
     <pkg>brew</pkg>
     <pkg>cacher</pkg>
     <pkg>cacheSweave</pkg>
@@ -151,6 +171,7 @@
     <pkg>odfWeave</pkg>
     <pkg>odfWeave.survey</pkg>
     <pkg>pander</pkg>
+    <pkg>papeR</pkg>
     <pkg>quantreg</pkg>
     <pkg>R.cache</pkg>
     <pkg>R.rsp</pkg>
@@ -162,16 +183,24 @@
     <pkg>reporttools</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>rtf</pkg>
+    <pkg>sparktex</pkg>
+    <pkg>stargazer</pkg>
     <pkg>SRPM</pkg>
+    <pkg>suRtex</pkg>
     <pkg>svSweave</pkg>
     <pkg>SweaveListingUtils</pkg>
+    <pkg>table1xls</pkg>
     <pkg>tables</pkg>
     <pkg>TeachingSampling</pkg>
+    <pkg>texreg</pkg>
+    <pkg>tikzDevice</pkg>
+    <pkg>tth</pkg>
     <pkg priority="core">xtable</pkg>
   </packagelist>
 
   <links>
     <a href="http://www.statistik.uni-muenchen.de/~leisch/Sweave/">The Sweave Homepage</a>
+    <a href="http://yihui.name/knitr/">knitr: Elegant, flexible and fast dynamic report generation with R</a>
     <bioc>weaver</bioc>
     <a href="http://en.wikipedia.org/wiki/Literate_Programming">Wikipedia: Literate Programming</a>
     <a href="http://biostat.mc.vanderbilt.edu/wiki/Main/StatReport">Harrell: Site for Reproducible Research </a>
