@@ -37,7 +37,9 @@
       <li><i>HTML Markup</i>: 
        The <pkg>R2HTML</pkg> package
        has drivers that allow <code>Sweave</code> to process HTML documents via <code>Sweave</code>. 
-       Both <pkg>R2HTML</pkg> and <pkg>hwriter</pkg> can be used to build HTML pages sequentially.
+       Packages <pkg>R2HTML</pkg>, <pkg>hwriter</pkg> and 
+       <a href="http://davidgohel.github.io/ReporteRs/index.html">ReporteRs</a>
+       can be used to build HTML pages sequentially.
        <pkg>R2HTML</pkg>, <pkg>xtable</pkg> and <pkg>hwriter</pkg> can also convert some 
        R objects into HTML representations. <pkg>knitr</pkg> also has facilities to weave
        R code with HTML as well as convert markdown to HTML. 
@@ -62,6 +64,8 @@
        href="http://rcom.univie.ac.at/">SWord</a>.The output from other
        packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also
        be opened by Word.  
+       <a href="http://davidgohel.github.io/ReporteRs/index.html">ReporteRs</a>
+       can be used to create Word and PowerPoint documents. 
        <a href="http://rcom.univie.ac.at/">RExcel</a> can integrate code with
        Microsoft Excel.
        Additionally, the <pkg>table1xls</pkg> can convert summary tables to 
