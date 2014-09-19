@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2014-01-20</version>
+  <version>2014-09-19</version>
   
   <info>
     <p>
@@ -36,7 +36,7 @@
        The <pkg>SweaveListingUtils</pkg> package can also provide enhanced control over how R code chunks and their output are rendered in LaTeX.
       </li>
       <li><i>Caching of R Objects</i>: 
-       The <pkg>cacheSweave</pkg> and <bioc>weaver</bioc> packages allow caching of specific code chunks. The <pkg>cacher</pkg> and <pkg>R.cache</pkg> packages can also be used but are  not integrated with <code>Sweave</code>.  The <pkg>SRPM</pkg> package (for shared reproducibility package management) creates  an R package that organize the results of an <code>Sweave</code> document into different  directories (e.g., article, figures, etc). <pkg>knitr</pkg> also has the ability to cache the results of code chunks. 
+       The <pkg>cacheSweave</pkg> and <bioc>weaver</bioc> packages allow caching of specific code chunks. The <pkg>R.cache</pkg> package can also be used but is not integrated with <code>Sweave</code>.  The <pkg>SRPM</pkg> package (for shared reproducibility package management) creates  an R package that organize the results of an <code>Sweave</code> document into different  directories (e.g., article, figures, etc). <pkg>knitr</pkg> also has the ability to cache the results of code chunks. 
       </li>
       <li><i>Others</i>: 
        The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches  to embedding R code into various markups.<pkg>knitr</pkg> is a comprehensive package derived from <code>Sweave</code> that includes code formatting, highlighting, caching, fine control of graphics, conditional evaluation, multiple markup formats and other features. The <pkg>pander</pkg> package can write R  objects into <a href="http://johnmacfarlane.net/pandoc/README.html">Pandoc's  markdown</a> and also to convert those or complex reports to PDF/HTML/docx/ODT. The <pkg>rapport</pkg> package builds on <pkg>pander</pkg> and provides a way to create  reproducible statistical report templates with graphs, tables and annotations to  be applied to any R data frame and export the results in different formats. The  <pkg>installr</pkg> package for Windows can download and install MikTeX, pandoc  (and other software), as well as quickly update R itself.
@@ -88,7 +88,6 @@
     <pkg>apsrtable</pkg>
     <pkg>bibtex</pkg>
     <pkg>brew</pkg>
-    <pkg>cacher</pkg>
     <pkg>cacheSweave</pkg>
     <pkg>exams</pkg>
     <pkg>hwriter</pkg>
