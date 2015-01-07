@@ -134,7 +134,7 @@
     <a href="http://www.econ.uiuc.edu/~roger/research/repro/">Koenker, Zeileis: On Reproducible Econometric Research</a>
     <a href="http://biostatistics.oxfordjournals.org/cgi/reprint/10/3/405">Peng: Reproducible Research and Biostatistics</a>
     <a href="http://www.bepress.com/uwbiostat/paper194/">Rossini, Leisch: Literate Statistical Practice</a>
-    <a href="http://www.ndns.nl/static/files/sls/presentations/Baggerly-AnnalsAppliedStats.pdf">Baggerly, Coombes: Deriving Chemosensitivity from Cell Lines: Forensic Bioinformatics and Reproducible Research in High-Throughput Biology</a>
+    <a href="http://dx.doi.org/10.1214/09-AOAS291">Baggerly, Coombes: Deriving Chemosensitivity from Cell Lines: Forensic Bioinformatics and Reproducible Research in High-Throughput Biology</a>
     <a href="http://www.R-project.org/doc/Rnews/Rnews_2002-3.pdf">Leisch: Sweave, Part I: Mixing R and LaTeX</a>
     <a href="http://www.R-project.org/doc/Rnews/Rnews_2003-2.pdf">Leisch: Sweave, Part II: Package Vignettes</a>
     <a href="http://www.R-project.org/doc/Rnews/Rnews_2005-1.pdf">Betebenner: Using Control Structures with Sweave</a>
