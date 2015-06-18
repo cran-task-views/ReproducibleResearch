@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2015-03-13</version>
+  <version>2015-06-18</version>
   
   <info>
     <p>
@@ -39,7 +39,7 @@
        The <bioc>weaver</bioc> package allows caching of specific code chunks. The <pkg>R.cache</pkg> package can also be used but is not integrated with <code>Sweave</code>.  <pkg>knitr</pkg> also has the ability to cache the results of code chunks. 
       </li>
       <li><i>Others</i>: 
-       The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches  to embedding R code into various markups.<pkg>knitr</pkg> is a comprehensive package derived from <code>Sweave</code> that includes code formatting, highlighting, caching, fine control of graphics, conditional evaluation, multiple markup formats and other features. The <pkg>pander</pkg> package can write R  objects into <a href="http://johnmacfarlane.net/pandoc/README.html">Pandoc's  markdown</a> and also to convert those or complex reports to PDF/HTML/docx/ODT. The <pkg>rapport</pkg> package builds on <pkg>pander</pkg> and provides a way to create  reproducible statistical report templates with graphs, tables and annotations to  be applied to any R data frame and export the results in different formats. The  <pkg>installr</pkg> package for Windows can download and install MikTeX, pandoc  (and other software), as well as quickly update R itself.
+       The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches  to embedding R code into various markups. <pkg>knitr</pkg> is a comprehensive package derived from <code>Sweave</code> that includes code formatting, highlighting, caching, fine control of graphics, conditional evaluation, multiple markup formats and other features. The <pkg>pander</pkg> package can write R  objects into <a href="http://johnmacfarlane.net/pandoc/README.html">Pandoc's  markdown</a> and also to convert those or complex reports to PDF/HTML/docx/ODT. The <pkg>rapport</pkg> package builds on <pkg>pander</pkg> and provides a way to create reproducible statistical report templates with graphs, tables and annotations to  be applied to any R data frame and export the results in different formats. The <pkg>svSweave</pkg> has supporting functions for Sweave. The  <pkg>installr</pkg> package for Windows can download and install MikTeX, pandoc  (and other software), as well as quickly update R itself.
       </li>
     </ul>
     <p>
@@ -50,7 +50,7 @@
       The base R utils package has generic functions to convert objects to LaTeX (via <code>toLatex</code>) and BibTeX (via <code>toBibtex</code>). The <pkg>bibtex</pkg> can also be used to parse BibTeX files. 
       </li>
       <li>
-      Functions for creating LaTeX representations of summary statistics and visualizations can be found in the <pkg>Hmisc</pkg>, <pkg>reporttools</pkg>, and <pkg>r2lh</pkg> packages. <pkg>Hmisc</pkg> also has functions for marking up data frames and the <pkg>quantreg</pkg> and <pkg>memisc</pkg> packages can mark up matrices.
+      Functions for creating LaTeX representations of summary statistics and visualizations can be found in the <pkg>Hmisc</pkg>, <pkg>reporttools</pkg>, <pkg>apsrtable</pkg>, and <pkg>r2lh</pkg> packages. <pkg>Hmisc</pkg> also has functions for marking up data frames and the <pkg>quantreg</pkg> and <pkg>memisc</pkg> packages can mark up matrices.
       </li>
       <li> 
       Cross-tabulations can be converted to LaTeX code using the <pkg>Hmisc</pkg> and <pkg>memisc</pkg> packages.
@@ -68,10 +68,13 @@
         The <pkg>odfWeave.survey</pkg> and <pkg>TeachingSampling</pkg> packages provide ODF and LaTeX functions, respectively, for survey sampling objects. The  <pkg>suRtex</pkg> package can create LaTeX markup of descriptive statistical summaries of survey data. 
       </li>
       <li>
-        The <pkg>texreg</pkg> has functions to create nice LaTeX and HTML representations of one or more objects (e.g. <code>lm</code>, <code>lme4</code>, etc.). The  <pkg>stargazer</pkg> has similar functionality for showing models and summary tables  in LaTeX and ASCII. 
+        The <pkg>texreg</pkg> has functions to create nice LaTeX and HTML representations of one or more objects (e.g. <code>lm</code>, <code>lme4</code>, etc.). The <pkg>memisc</pkg> and <pkg>stargazer</pkg> packages have similar functionality for showing models and summary tables in LaTeX and ASCII. 
       </li>
       <li>
         The <pkg>sparktex</pkg> package can create LaTeX representations of <a href="http://en.wikipedia.org/wiki/Sparkline">sparklines</a>. 
+      </li>
+      <li> 
+        LaTeX markup for several object types can be created using the <pkg>papeR</pkg> package. 
       </li>
       <li> 
         The <pkg>NMOF</pkg> package contains a function named <code>qTable</code> that makes a LaTeX tabular environment that has the median, minimum and maximum of the columns of a matrix along with a quartile plot. 
@@ -96,6 +99,7 @@
     <pkg>odfWeave</pkg>
     <pkg>odfWeave.survey</pkg>
     <pkg>pander</pkg>
+    <pkg>papeR</pkg>
     <pkg>quantreg</pkg>
     <pkg>R.cache</pkg>
     <pkg>R.rsp</pkg>
