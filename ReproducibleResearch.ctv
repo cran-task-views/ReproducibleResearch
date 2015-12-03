@@ -3,103 +3,216 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="max.kuhn@pfizer.com">Max Kuhn</maintainer>
-  <version>2015-06-18</version>
+  <version>2015-12-03</version>
   
   <info>
     <p>
-      The goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, better understood and verified.
+      The goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, better understood and verified. Packages in R for this purpose can be split into groups for: literate programming, package reproducibility, code/data formatting tools, format convertors, and object caching. 
+    </p>
+    <h1>Literate Programming</h1>
+    <p>
+      The primary way that R  facilitates reproducible research is using a document that is a combination of content and data analysis code. The <code>Sweave</code> function (in the base R utils package) and the <pkg>knitr</pkg> package can be used to blend the subject matter and R code so that a single document defines the content and the analysis. The <pkg>brew</pkg>  and <pkg>R.rsp</pkg> packages contain alternative approaches to embedding R code into various markups.
     </p>
     <p>
-      R largely facilitates reproducible research using literate programming; a document that is a combination of content and data analysis code. The <code>Sweave</code> function (in the base R utils package) and the <pkg>knitr</pkg> package can be used to blend the subject matter and R code so that a single document defines the content and the algorithms.
-    </p>
-    <p>
-      Basic packages can be structured into the following groups:
-    </p>
-    <ul>
-      <li><i>LaTeX Markup</i>: 
-       The <pkg>Hmisc</pkg>, <pkg>xtable</pkg> and <pkg>tables</pkg> packages contain functions to write R objects into LaTeX representations. <pkg>Hmisc</pkg> also includes methods for translating strings to proper LaTeX markup (e.g., ">=" to "$\geq$"). Animations can be inserted into LaTeX documents being converted to PDF via the <pkg>animation</pkg> package. The <code>pictex</code> function in the base grDevices package is a PicTeX graphics driver and the <pkg>tikzDevice</pkg> can convert R graphics to <a href="http://www.texample.net/tikz/">TikZ</a> markup. The <pkg>tth</pkg> package can convert TeX to HTML. 
-      </li>
-      <li><i>HTML Markup</i>: 
-       The <pkg>R2HTML</pkg> package has drivers that allow <code>Sweave</code> to process HTML documents via <code>Sweave</code>.  Packages <pkg>R2HTML</pkg>, <pkg>hwriter</pkg> and  <a href="http://davidgohel.github.io/ReporteRs/index.html">ReporteRs</a> can be used to build HTML pages sequentially. <pkg>R2HTML</pkg>, <pkg>xtable</pkg> and <pkg>hwriter</pkg> can also convert some R objects into HTML representations. <pkg>knitr</pkg> also has facilities to weave R code with HTML as well as convert markdown to HTML. 
-      </li>
-      <li><i>ODF Markup</i>: 
-       The <pkg>odfWeave</pkg>  package extends <code>Sweave</code> to the  <a href="http://en.wikipedia.org/wiki/OpenDocument_technical_specification">Open Document Format</a>. Word processing tools, such as OpenOffice.org, can then be used to blend content and programs. Many word processors can be used to translate the ODF document to other formats (e.g., Word, PDF, HTML, etc.)
-      </li>
-      <li><i>Microsoft Formats</i>:
-       The <pkg>R2wd</pkg> and <pkg>R2PPT</pkg> packages for Windows can be used to communicate between R and Word or PowerPoint via the COM interface. Document elements (e.g. sections, text, images, etc) that are created in R can be inserted into the document from R. The <pkg>rtf</pkg> can also be used to create RTF format documents directly from R. Commercial R products hat work with RTF and/or Word are <a href="http://www.smartsystems.ro/rtfgen">RTFGen</a>, <a href="http://inferenceforr.com/">Inference for R</a> and <a href="http://rcom.univie.ac.at/">SWord</a>.The output from other packages (<pkg>odfWeave</pkg> and <pkg>R2HTML</pkg>) can also be opened by Word. <a href="http://davidgohel.github.io/ReporteRs/index.html">ReporteRs</a> can be used to create Word and PowerPoint documents.  <a href="http://rcom.univie.ac.at/">RExcel</a> can integrate code with Microsoft Excel. Additionally, the <pkg>table1xls</pkg> can convert summary tables to 
-       Excel files. 
-      </li>       
-      <li><i>Plain Text Formats</i>: 
-       R code and output in <code>Sweave</code> files can be converted into  <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> and other structured  text formats using the <pkg>ascii</pkg> package. The <pkg>markdown</pkg> and  <pkg>knitr</pkg> packages have tools for  <a href="http://daringfireball.net/projects/markdown/">markdown</a> format. 
-      </li>
-      <li><i>Syntax Highlighting</i>: 
-       The <pkg>SweaveListingUtils</pkg> package can also provide enhanced control over how R code chunks and their output are rendered in LaTeX.
-      </li>
-      <li><i>Caching of R Objects</i>: 
-       The <bioc>weaver</bioc> package allows caching of specific code chunks. The <pkg>R.cache</pkg> package can also be used but is not integrated with <code>Sweave</code>.  <pkg>knitr</pkg> also has the ability to cache the results of code chunks. 
-      </li>
-      <li><i>Others</i>: 
-       The <pkg>brew</pkg> and <pkg>R.rsp</pkg> packages contain alternative approaches  to embedding R code into various markups. <pkg>knitr</pkg> is a comprehensive package derived from <code>Sweave</code> that includes code formatting, highlighting, caching, fine control of graphics, conditional evaluation, multiple markup formats and other features. The <pkg>pander</pkg> package can write R  objects into <a href="http://johnmacfarlane.net/pandoc/README.html">Pandoc's  markdown</a> and also to convert those or complex reports to PDF/HTML/docx/ODT. The <pkg>rapport</pkg> package builds on <pkg>pander</pkg> and provides a way to create reproducible statistical report templates with graphs, tables and annotations to  be applied to any R data frame and export the results in different formats. The <pkg>svSweave</pkg> has supporting functions for Sweave. The  <pkg>installr</pkg> package for Windows can download and install MikTeX, pandoc  (and other software), as well as quickly update R itself.
-      </li>
-    </ul>
-    <p>
-      An incomplete list of packages which facilitate literate programming for specific  types of analysis or objects:
-    </p>
-    <ul>
-      <li> 
-      The base R utils package has generic functions to convert objects to LaTeX (via <code>toLatex</code>) and BibTeX (via <code>toBibtex</code>). The <pkg>bibtex</pkg> can also be used to parse BibTeX files. 
-      </li>
-      <li>
-      Functions for creating LaTeX representations of summary statistics and visualizations can be found in the <pkg>Hmisc</pkg>, <pkg>reporttools</pkg>, <pkg>apsrtable</pkg>, and <pkg>r2lh</pkg> packages. <pkg>Hmisc</pkg> also has functions for marking up data frames and the <pkg>quantreg</pkg> and <pkg>memisc</pkg> packages can mark up matrices.
-      </li>
-      <li> 
-      Cross-tabulations can be converted to LaTeX code using the <pkg>Hmisc</pkg> and <pkg>memisc</pkg> packages.
-      </li>
-      <li>
-        The <pkg>xtable</pkg> and <pkg>rms</pkg> packages provide LaTeX  representations of some common models (e.g., Cox proportional hazards model, etc.).  For example, processing an <code>aov</code> object with the <code>xtable</code> function will generate LaTeX markup of the ANOVA table. Similarly, methods exist for <code>glm</code>, <code>prcomp</code>, <code>ts</code> and other types of objects.
-      </li> 
-      <li>
-      The <pkg>quantreg</pkg> contains LaTeX markup functions for quantile regression fit summaries.
-      </li> 
-      <li>
-        Standardized exams can be created using the <pkg>exams</pkg> package
-      </li>
-      <li>
-        The <pkg>odfWeave.survey</pkg> and <pkg>TeachingSampling</pkg> packages provide ODF and LaTeX functions, respectively, for survey sampling objects. The  <pkg>suRtex</pkg> package can create LaTeX markup of descriptive statistical summaries of survey data. 
-      </li>
-      <li>
-        The <pkg>texreg</pkg> has functions to create nice LaTeX and HTML representations of one or more objects (e.g. <code>lm</code>, <code>lme4</code>, etc.). The <pkg>memisc</pkg> and <pkg>stargazer</pkg> packages have similar functionality for showing models and summary tables in LaTeX and ASCII. 
-      </li>
-      <li>
-        The <pkg>sparktex</pkg> package can create LaTeX representations of <a href="http://en.wikipedia.org/wiki/Sparkline">sparklines</a>. 
-      </li>
-      <li> 
-        LaTeX markup for several object types can be created using the <pkg>papeR</pkg> package. 
-      </li>
-      <li> 
-        The <pkg>NMOF</pkg> package contains a function named <code>qTable</code> that makes a LaTeX tabular environment that has the median, minimum and maximum of the columns of a matrix along with a quartile plot. 
-      </li>
-    </ul>
+      The resources for literate programming are best organized by the document type/markup language:
+    </p> 
+    <h2>
+      LaTeX
+    </h2>
+
+      <p>
+        Both <code>Sweave</code> and <pkg>knitr</pkg> can process LaTeX files. <pkg>lazyWeave</pkg> can create LaTeX documents from scratch. 
+      </p>
+      <p>
+        Object Conversion Functions:
+      </p>
+        <ul>
+          <li>
+            <i>summary tables/statistics</i>: <pkg>Hmisc</pkg>, <pkg>NMOF</pkg>, <pkg>papeR</pkg>, <pkg>quantreg</pkg>, <pkg>rapport</pkg>, <pkg>reporttools</pkg>, <pkg>sparktex</pkg>, <pkg>tables</pkg>,<pkg>xtable</pkg>, <pkg>ztable</pkg>
+          </li>    
+          <li>
+            <i>tables/cross-tabulations</i>: <pkg>compareGroups</pkg>, <pkg>Hmisc</pkg>, <pkg>lazyWeave</pkg>, <pkg>knitLatex</pkg>, <pkg>knitr</pkg>, <pkg>reporttools</pkg>, <pkg>ztable</pkg>
+          </li>      
+          <li>
+            <i>graphics</i>: <pkg>animation</pkg>, <pkg>Hmisc</pkg>, <code>grDevices:::pictex</code>, <pkg>sparktex</pkg>, <pkg>tikzDevice</pkg> 
+          </li>    
+          <li>
+            <i>statistical models/methods</i>: <pkg>apsrtable</pkg>, <pkg>memisc</pkg>, <pkg>quantreg</pkg>,  <pkg>r2lh</pkg>, <pkg>rms</pkg>, <pkg>stargazer</pkg>, <pkg>suRtex</pkg>, <pkg>TeachingSampling</pkg>, <pkg>texreg</pkg>, <pkg>xtable</pkg>, <pkg>ztable</pkg>
+          </li> 
+          <li>
+            <i>bibtex</i>: <pkg>bibtex</pkg> and <pkg>RefManageR</pkg>
+          </li> 
+          <li>
+            <i>others</i>: <pkg>latex2exp</pkg> converts LaTeX equations to <tt>plotmath</tt> expressions. 
+          </li>                                                   
+        </ul>  
+      <p>
+        Miscellaneous Tools
+      </p>
+        <ul>
+          <li>
+            <pkg>Hmisc</pkg> contains a function to correctly escape special characters. <pkg>resumer</pkg> creates resumes. Standardized exams can be created using the <pkg>exams</pkg> package.
+          </li>                                                   
+        </ul> 
+   <h2>
+      HTML
+    </h2>
+      <p>
+        The <pkg>knitr</pkg> package can process HTML files directly.  <code>Sweave</code> can also work with HTML by way of the <pkg>R2HTML</pkg> package. <pkg>Kmisc</pkg>  and <pkg>lazyWeave</pkg> can create HTML format documents from scratch.  
+      </p>
+      <p>
+        Object Conversion Functions:
+      </p>
+        <ul>
+          <li>
+            <i>summary tables/statistics</i>: <pkg>stargazer</pkg>
+          </li>    
+          <li>
+            <i>tables/cross-tabulations</i>: <pkg>compareGroups</pkg>, <pkg>DT</pkg>,  <pkg>formattable</pkg>, <pkg>htmlTable</pkg>, <pkg>HTMLUtils</pkg>, <pkg>hwriter</pkg>, <pkg>Kmisc</pkg>, <pkg>knitr</pkg>, <pkg>lazyWeave</pkg>, <pkg>SortableHTMLTables</pkg>, <pkg>texreg</pkg>, <pkg>ztable</pkg>
+          </li>      
+          <li>
+            <i>statistical models/methods</i>: <pkg>r2lh</pkg>, <pkg>rapport</pkg>, <pkg>stargazer</pkg>, <pkg>xtable</pkg>
+          </li> 
+          <li>
+            <i>others</i>: <pkg>knitcitations</pkg>, <pkg>RefManageR</pkg>
+          </li>                                                   
+        </ul>  
+      <p>
+        Miscellaneous Tools: <pkg>htmltools</pkg> has various tools for working with HTML. <pkg>tufterhandout</pkg> for creating Tufte-style handouts
+      </p>
+
+   <h2>
+      Markdown
+    </h2>
+      <p>
+        The <pkg>knitr</pkg> package can process markdown files without assistance. The packages  <pkg>markdown</pkg> and <pkg>rmarkdown</pkg> have general tools for working with documents in this format. <pkg>Kmisc</pkg> and <pkg>lazyWeave</pkg> can create markdown format documents from scratch.
+      </p>
+      <p>
+        Object Conversion Functions:
+      </p>
+        <ul>
+          <li>
+            <i>summary tables/statistics</i>: <pkg>papeR</pkg>
+          </li>    
+          <li>
+            <i>tables/cross-tabulations</i>:  <pkg>DT</pkg>, <pkg>formattable</pkg>, <pkg>htmlTable</pkg>, <pkg>knitr</pkg>, <pkg>Kmisc</pkg>, <pkg>lazyWeave</pkg>, <pkg>papeR</pkg>
+          </li>        
+          <li>
+            <i>statistical models/methods</i>: <pkg>pander</pkg>, <pkg>papeR</pkg>, <pkg>rapport</pkg>, <pkg>texreg</pkg>
+          </li> 
+          <li>
+            <i>others</i>: <pkg>RefManageR</pkg>
+          </li>                                                   
+        </ul>  
+      <p>
+        Miscellaneous Tools: <pkg>tufterhandout</pkg> for creating Tufte-style handouts. <pkg>kfigr</pkg> allows for figure indexing in markdown documents. 
+      </p>
+
+   <h2>
+      OpenDocument Format (ODF)
+    </h2>
+      <p>
+        The <pkg>odfWeave</pkg> package can process ODF files.  
+      </p>
+      <p>
+        Object Conversion Functions:
+      </p>
+        <ul>
+          <li>
+            <i>tables/cross-tabulations</i>: <pkg>odfWeave</pkg>
+          </li>        
+          <li>
+            <i>statistical models/methods</i>: <pkg>odfWeave.survey</pkg>, <pkg>rapport</pkg>
+          </li>                                                  
+        </ul>  
+
+   <h2>
+    Microsoft Formats
+   </h2>
+   <p>
+    The <pkg>ReporteRs</pkg> (formerly R2DOCX) package can create <tt>docx</tt> and <tt>pptx</tt> files.  <pkg>R2wd</pkg> (windows only) can also create Word documents from scratch and <pkg>R2PPT</pkg> (also windows only) can create PowerPoint slides. The <pkg>rtf</pkg> package does the same for Rich Text Format documents. 
+   </p>
+   <p>
+    Object Conversion Functions:
+   </p>
+   <ul>   
+    <i>tables/cross-tabulations</i>: <pkg>apaStyle</pkg>                                                    
+   </ul>  
+
+   <h1>
+     Miscellaneous Tools
+   </h1>     
+
+   <h2>Package Reproducibility</h2> 
+   
+   <p> 
+   	R also has tools for ensuring that specific packages versions can be required for analyses. <pkg>checkpoint</pkg>, <pkg>rbundler</pkg> and <pkg>packrat</pkg> install packages required for a project to a local archive as they existed at a specified point in time. This allows specific package versions to be maintained over time and different users. The <pkg>miniCRAN</pkg> package facilitates the creation of local CRAN-like repositories. 
+   </p>
+
+   <h2>Formatting Tools</h2> 
+
+   <p>
+    <pkg>formatR</pkg>, <pkg>highlight</pkg>, <pkg>highr</pkg>, and <pkg>SweaveListingUtils</pkg> can be used to color and/or format R code.                                                 
+   </p>  
+   <p>
+    Packages <pkg>humanFormat</pkg>, <pkg>lubridate</pkg>, <pkg>prettyunits</pkg>, and <pkg>rprintf</pkg> have functions to better format data. 
+   </p>
+
+    <h2>Format Convertors </h2> 
+
+   <p>
+    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions. 
+   </p>   
+
+    <h2>Object Caching Packages</h2> 
+
+   <p>
+    When using <code>Sweave</code> and <pkg>knitr</pkg> it can be advantageous to <i>cache</i> the results of time consuming code chunks if the document will be re-processed (i.e. during debugging). <pkg>knitr</pkg> facilitates object caching and the Bioconductor package <a href="https://www.bioconductor.org/packages/release/bioc/html/weaver.html"><pkg>weaver</pkg></a> can be used with <code>Sweave</code>. 
+   </p>   
+   <p>
+   Non-literate programming packages to facilitating caching/archiving are <pkg>R.cache</pkg> and <pkg>archivist</pkg>.
+   </p>
   </info>
 
   <packagelist>
-    <pkg>animation</pkg>
-    <pkg>ascii</pkg>
+    <pkg>animation</pkg> 
+    <pkg>apaStyle</pkg>  
     <pkg>apsrtable</pkg>
+    <pkg>archivist</pkg>    
+    <pkg>ascii</pkg>
     <pkg>bibtex</pkg>
     <pkg>brew</pkg>
+    <pkg>checkpoint</pkg>   
+    <pkg>compareGroups</pkg>
+    <pkg>DT</pkg>
     <pkg>exams</pkg>
+    <pkg>formatR</pkg>
+    <pkg>formattable</pkg>   
+    <pkg>highlight</pkg>    
+    <pkg>highr</pkg>      
+    <pkg>htmlTable</pkg>
+    <pkg>htmltools</pkg> 
+    <pkg>HTMLUtils</pkg>
     <pkg>hwriter</pkg>
-    <pkg>installr</pkg>
     <pkg priority="core">Hmisc</pkg>
+    <pkg>latex2exp</pkg>
+    <pkg>lazyWeave</pkg>   
+    <pkg>lubridate</pkg>    
+    <pkg>kfigr</pkg>
+    <pkg>Kmisc</pkg>
+    <pkg>knitcitations</pkg>
+    <pkg>knitLatex</pkg>
     <pkg priority="core">knitr</pkg>
     <pkg>markdown</pkg>
     <pkg>memisc</pkg>
+    <pkg>miniCRAN</pkg>
     <pkg>NMOF</pkg>
     <pkg>odfWeave</pkg>
     <pkg>odfWeave.survey</pkg>
+    <pkg>packrat</pkg>       
     <pkg>pander</pkg>
     <pkg>papeR</pkg>
+    <pkg>prettyunits</pkg>
     <pkg>quantreg</pkg>
     <pkg>R.cache</pkg>
     <pkg>R.rsp</pkg>
@@ -108,21 +221,28 @@
     <pkg>R2PPT</pkg>
     <pkg>R2wd</pkg>
     <pkg>rapport</pkg>
-    <pkg>reporttools</pkg>
+    <pkg>rbundler</pkg>
+    <pkg>RefManageR</pkg>
+    <pkg>reporttools</pkg>    
+    <pkg>ReporteRs</pkg>
+    <pkg>resumer</pkg>
+    <pkg>rmarkdown</pkg>
     <pkg priority="core">rms</pkg>
+    <pkg>rprintf</pkg>
     <pkg>rtf</pkg>
+    <pkg>SortableHTMLTables</pkg>
     <pkg>sparktex</pkg>
     <pkg>stargazer</pkg>
     <pkg>suRtex</pkg>
-    <pkg>svSweave</pkg>
     <pkg>SweaveListingUtils</pkg>
-    <pkg>table1xls</pkg>
     <pkg>tables</pkg>
     <pkg>TeachingSampling</pkg>
     <pkg>texreg</pkg>
     <pkg>tikzDevice</pkg>
     <pkg>tth</pkg>
+    <pkg>tufterhandout</pkg>
     <pkg priority="core">xtable</pkg>
+    <pkg>ztable</pkg>
   </packagelist>
 
   <links>
