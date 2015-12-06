@@ -11,7 +11,7 @@
     </p>
     <h1>Literate Programming</h1>
     <p>
-      The primary way that R  facilitates reproducible research is using a document that is a combination of content and data analysis code. The <code>Sweave</code> function (in the base R utils package) and the <pkg>knitr</pkg> package can be used to blend the subject matter and R code so that a single document defines the content and the analysis. The <pkg>brew</pkg>  and <pkg>R.rsp</pkg> packages contain alternative approaches to embedding R code into various markups.
+      The primary way that R facilitates reproducible research is using a document that is a combination of content and data analysis code. The <code>Sweave</code> function (in the base R utils package) and the <pkg>knitr</pkg> package can be used to blend the subject matter and R code so that a single document defines the content and the analysis. The <pkg>brew</pkg>  and <pkg>R.rsp</pkg> packages contain alternative approaches to embedding R code into various markups.
     </p>
     <p>
       The resources for literate programming are best organized by the document type/markup language:
@@ -19,7 +19,6 @@
     <h2>
       LaTeX
     </h2>
-
       <p>
         Both <code>Sweave</code> and <pkg>knitr</pkg> can process LaTeX files. <pkg>lazyWeave</pkg> can create LaTeX documents from scratch. 
       </p>
@@ -136,21 +135,21 @@
     Object Conversion Functions:
    </p>
    <ul>   
-    <i>tables/cross-tabulations</i>: <pkg>apaStyle</pkg>                                                    
+    <li>
+      <i>tables/cross-tabulations</i>: <pkg>apaStyle</pkg>
+    </li>
    </ul>  
 
    <h1>
      Miscellaneous Tools
    </h1>     
 
-   <h2>Package Reproducibility</h2> 
-   
+   <h2>Package Reproducibility</h2>    
    <p> 
-   	R also has tools for ensuring that specific packages versions can be required for analyses. <pkg>checkpoint</pkg>, <pkg>rbundler</pkg> and <pkg>packrat</pkg> install packages required for a project to a local archive as they existed at a specified point in time. This allows specific package versions to be maintained over time and different users. The <pkg>miniCRAN</pkg> package facilitates the creation of local CRAN-like repositories. 
+     R also has tools for ensuring that specific packages versions can be required for analyses. <pkg>checkpoint</pkg>, <pkg>rbundler</pkg> and <pkg>packrat</pkg> install packages required for a project to a local archive as they existed at a specified point in time. This allows specific package versions to be maintained over time and different users. The <pkg>miniCRAN</pkg> package facilitates the creation of local CRAN-like repositories. 
    </p>
 
    <h2>Formatting Tools</h2> 
-
    <p>
     <pkg>formatR</pkg>, <pkg>highlight</pkg>, <pkg>highr</pkg>, and <pkg>SweaveListingUtils</pkg> can be used to color and/or format R code.                                                 
    </p>  
@@ -158,16 +157,14 @@
     Packages <pkg>humanFormat</pkg>, <pkg>lubridate</pkg>, <pkg>prettyunits</pkg>, and <pkg>rprintf</pkg> have functions to better format data. 
    </p>
 
-    <h2>Format Convertors </h2> 
-
+   <h2>Format Convertors </h2> 
    <p>
     <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions. 
    </p>   
 
-    <h2>Object Caching Packages</h2> 
-
+   <h2>Object Caching Packages</h2> 
    <p>
-    When using <code>Sweave</code> and <pkg>knitr</pkg> it can be advantageous to <i>cache</i> the results of time consuming code chunks if the document will be re-processed (i.e. during debugging). <pkg>knitr</pkg> facilitates object caching and the Bioconductor package <a href="https://www.bioconductor.org/packages/release/bioc/html/weaver.html"><pkg>weaver</pkg></a> can be used with <code>Sweave</code>. 
+    When using <code>Sweave</code> and <pkg>knitr</pkg> it can be advantageous to <i>cache</i> the results of time consuming code chunks if the document will be re-processed (i.e. during debugging). <pkg>knitr</pkg> facilitates object caching and the Bioconductor package <bio>weaver</bioc></a> can be used with <code>Sweave</code>.
    </p>   
    <p>
    Non-literate programming packages to facilitating caching/archiving are <pkg>R.cache</pkg> and <pkg>archivist</pkg>.
@@ -193,6 +190,7 @@
     <pkg>htmlTable</pkg>
     <pkg>htmltools</pkg> 
     <pkg>HTMLUtils</pkg>
+    <pkg>humanFormat</pkg>
     <pkg>hwriter</pkg>
     <pkg priority="core">Hmisc</pkg>
     <pkg>latex2exp</pkg>
