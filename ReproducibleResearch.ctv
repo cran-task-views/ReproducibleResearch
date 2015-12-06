@@ -164,7 +164,7 @@
 
    <h2>Object Caching Packages</h2> 
    <p>
-    When using <code>Sweave</code> and <pkg>knitr</pkg> it can be advantageous to <i>cache</i> the results of time consuming code chunks if the document will be re-processed (i.e. during debugging). <pkg>knitr</pkg> facilitates object caching and the Bioconductor package <bio>weaver</bioc></a> can be used with <code>Sweave</code>.
+    When using <code>Sweave</code> and <pkg>knitr</pkg> it can be advantageous to <i>cache</i> the results of time consuming code chunks if the document will be re-processed (i.e. during debugging). <pkg>knitr</pkg> facilitates object caching and the Bioconductor package <bioc>weaver</bioc> can be used with <code>Sweave</code>.
    </p>   
    <p>
    Non-literate programming packages to facilitating caching/archiving are <pkg>R.cache</pkg> and <pkg>archivist</pkg>.
