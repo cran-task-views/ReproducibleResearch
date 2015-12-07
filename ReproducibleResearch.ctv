@@ -84,7 +84,7 @@
       Markdown
     </h2>
       <p>
-        The <pkg>knitr</pkg> package can process markdown files without assistance. The packages  <pkg>markdown</pkg> and <pkg>rmarkdown</pkg> have general tools for working with documents in this format. <pkg>Kmisc</pkg> and <pkg>lazyWeave</pkg> can create markdown format documents from scratch.
+        The <pkg>knitr</pkg> package can process markdown files without assistance. The packages  <pkg>markdown</pkg> and <pkg>rmarkdown</pkg> have general tools for working with documents in this format. <pkg>Kmisc</pkg> and <pkg>lazyWeave</pkg> can create markdown format documents from scratch. Also, the <pkg>ascii</pkg> package can write R objects to the <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> format. 
       </p>
       <p>
         Object Conversion Functions:
@@ -159,7 +159,7 @@
 
    <h2>Format Convertors </h2> 
    <p>
-    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions. 
+    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions. LaTeX to Rich Text Format converions can be done using the <pkg>connect3</pkg> package. 
    </p>   
 
    <h2>Object Caching Packages</h2> 
@@ -181,6 +181,7 @@
     <pkg>brew</pkg>
     <pkg>checkpoint</pkg>   
     <pkg>compareGroups</pkg>
+    <pkg>connect3</pkg>
     <pkg>DT</pkg>
     <pkg>exams</pkg>
     <pkg>formatR</pkg>
