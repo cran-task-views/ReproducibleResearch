@@ -245,7 +245,7 @@
   </packagelist>
 
   <links>
-    <a href="http://www.statistik.uni-muenchen.de/~leisch/Sweave/">The Sweave Homepage</a>
+    <a href="http://leisch.userweb.mwn.de/Sweave/">The Sweave Homepage</a>
     <a href="http://yihui.name/knitr/">knitr: Elegant, flexible and fast dynamic report generation with R</a>
     <bioc>weaver</bioc>
     <a href="http://en.wikipedia.org/wiki/Literate_Programming">Wikipedia: Literate Programming</a>
