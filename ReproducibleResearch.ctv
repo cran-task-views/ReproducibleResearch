@@ -251,7 +251,7 @@
     <a href="http://en.wikipedia.org/wiki/Literate_Programming">Wikipedia: Literate Programming</a>
     <a href="http://biostat.mc.vanderbilt.edu/wiki/Main/StatReport">Harrell: Site for Reproducible Research </a>
     <a href="http://www.econ.uiuc.edu/~roger/research/repro/">Koenker, Zeileis: On Reproducible Econometric Research</a>
-    <a href="http://biostatistics.oxfordjournals.org/cgi/reprint/10/3/405">Peng: Reproducible Research and Biostatistics</a>
+    <a href="https://doi.org/10.1093/biostatistics/kxp014">Peng: Reproducible Research and Biostatistics</a>
     <a href="http://www.bepress.com/uwbiostat/paper194/">Rossini, Leisch: Literate Statistical Practice</a>
     <a href="http://dx.doi.org/10.1214/09-AOAS291">Baggerly, Coombes: Deriving Chemosensitivity from Cell Lines: Forensic Bioinformatics and Reproducible Research in High-Throughput Biology</a>
     <a href="http://www.R-project.org/doc/Rnews/Rnews_2002-3.pdf">Leisch: Sweave, Part I: Mixing R and LaTeX</a>
