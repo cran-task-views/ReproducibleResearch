@@ -159,7 +159,7 @@
 
    <h2>Format Convertors </h2> 
    <p>
-    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions. LaTeX to Rich Text Format converions can be done using the <pkg>connect3</pkg> package. 
+    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions. LaTeX to Rich Text Format conversions can be done using the <pkg>connect3</pkg> package. 
    </p>   
 
    <h2>Object Caching Packages</h2> 
