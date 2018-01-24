@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="mxkuhn@gmail.com">Max Kuhn</maintainer>
-  <version>2017-12-21</version>
+  <version>2018-01-24</version>
   
   <info>
     <p>
@@ -30,7 +30,7 @@
             <i>summary tables/statistics</i>: <pkg>Hmisc</pkg>, <pkg>NMOF</pkg>, <pkg>papeR</pkg>, <pkg>quantreg</pkg>, <pkg>rapport</pkg>, <pkg>reporttools</pkg>, <pkg>sparktex</pkg>, <pkg>tables</pkg>,<pkg>xtable</pkg>, <pkg>ztable</pkg>
           </li>    
           <li>
-            <i>tables/cross-tabulations</i>: <pkg>compareGroups</pkg>, <pkg>Hmisc</pkg>, <pkg>lazyWeave</pkg>, <pkg>knitLatex</pkg>, <pkg>knitr</pkg>, <pkg>reporttools</pkg>, <pkg>ztable</pkg>
+            <i>tables/cross-tabulations</i>: <pkg>Hmisc</pkg>, <pkg>lazyWeave</pkg>, <pkg>knitLatex</pkg>, <pkg>knitr</pkg>, <pkg>reporttools</pkg>, <pkg>ztable</pkg>
           </li>      
           <li>
             <i>graphics</i>: <pkg>animation</pkg>, <pkg>Hmisc</pkg>, <code>grDevices:::pictex</code>, <pkg>sparktex</pkg>, <pkg>tikzDevice</pkg> 
@@ -67,7 +67,7 @@
             <i>summary tables/statistics</i>: <pkg>stargazer</pkg>
           </li>    
           <li>
-            <i>tables/cross-tabulations</i>: <pkg>compareGroups</pkg>, <pkg>DT</pkg>,  <pkg>formattable</pkg>, <pkg>htmlTable</pkg>, <pkg>HTMLUtils</pkg>, <pkg>hwriter</pkg>, <pkg>Kmisc</pkg>, <pkg>knitr</pkg>, <pkg>lazyWeave</pkg>, <pkg>SortableHTMLTables</pkg>, <pkg>texreg</pkg>, <pkg>ztable</pkg>
+            <i>tables/cross-tabulations</i>: <pkg>DT</pkg>,  <pkg>formattable</pkg>, <pkg>htmlTable</pkg>, <pkg>HTMLUtils</pkg>, <pkg>hwriter</pkg>, <pkg>Kmisc</pkg>, <pkg>knitr</pkg>, <pkg>lazyWeave</pkg>, <pkg>SortableHTMLTables</pkg>, <pkg>texreg</pkg>, <pkg>ztable</pkg>
           </li>      
           <li>
             <i>statistical models/methods</i>: <pkg>r2lh</pkg>, <pkg>rapport</pkg>, <pkg>stargazer</pkg>, <pkg>xtable</pkg>
@@ -180,7 +180,6 @@
     <pkg>bibtex</pkg>
     <pkg>brew</pkg>
     <pkg>checkpoint</pkg>   
-    <pkg>compareGroups</pkg>
     <pkg>DT</pkg>
     <pkg>exams</pkg>
     <pkg>formatR</pkg>
