@@ -36,7 +36,7 @@
             <i>graphics</i>: <pkg>animation</pkg>, <pkg>Hmisc</pkg>, <code>grDevices:::pictex</code>, <pkg>sparktex</pkg>, <pkg>tikzDevice</pkg> 
           </li>    
           <li>
-            <i>statistical models/methods</i>: <pkg>apsrtable</pkg>, <pkg>memisc</pkg>, <pkg>quantreg</pkg>,  <pkg>r2lh</pkg>, <pkg>rms</pkg>, <pkg>stargazer</pkg>, <pkg>suRtex</pkg>, <pkg>TeachingSampling</pkg>, <pkg>texreg</pkg>, <pkg>xtable</pkg>, <pkg>ztable</pkg>
+            <i>statistical models/methods</i>: <pkg>apsrtable</pkg>, <pkg>memisc</pkg>, <pkg>quantreg</pkg>, <pkg>rms</pkg>, <pkg>stargazer</pkg>, <pkg>suRtex</pkg>, <pkg>TeachingSampling</pkg>, <pkg>texreg</pkg>, <pkg>xtable</pkg>, <pkg>ztable</pkg>
           </li> 
           <li>
             <i>bibtex</i>: <pkg>bibtex</pkg> and <pkg>RefManageR</pkg>
@@ -70,7 +70,7 @@
             <i>tables/cross-tabulations</i>: <pkg>DT</pkg>,  <pkg>formattable</pkg>, <pkg>htmlTable</pkg>, <pkg>HTMLUtils</pkg>, <pkg>hwriter</pkg>, <pkg>Kmisc</pkg>, <pkg>knitr</pkg>, <pkg>lazyWeave</pkg>, <pkg>SortableHTMLTables</pkg>, <pkg>texreg</pkg>, <pkg>ztable</pkg>
           </li>      
           <li>
-            <i>statistical models/methods</i>: <pkg>r2lh</pkg>, <pkg>rapport</pkg>, <pkg>stargazer</pkg>, <pkg>xtable</pkg>
+            <i>statistical models/methods</i>: <pkg>rapport</pkg>, <pkg>stargazer</pkg>, <pkg>xtable</pkg>
           </li> 
           <li>
             <i>others</i>: <pkg>knitcitations</pkg>, <pkg>RefManageR</pkg>
@@ -214,7 +214,6 @@
     <pkg>R.cache</pkg>
     <pkg>R.rsp</pkg>
     <pkg priority="core">R2HTML</pkg>
-    <pkg>r2lh</pkg>
     <pkg>R2PPT</pkg>
     <pkg>R2wd</pkg>
     <pkg>rapport</pkg>
