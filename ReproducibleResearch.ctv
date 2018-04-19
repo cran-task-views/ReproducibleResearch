@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="mxkuhn@gmail.com">Max Kuhn</maintainer>
-  <version>2018-02-06</version>
+  <version>2018-04-18</version>
   
   <info>
     <p>
@@ -111,17 +111,11 @@
       OpenDocument Format (ODF)
     </h2>
       <p>
-        The <pkg>odfWeave</pkg> package can process ODF files.  
-      </p>
-      <p>
         Object Conversion Functions:
       </p>
         <ul>
           <li>
-            <i>tables/cross-tabulations</i>: <pkg>odfWeave</pkg>
-          </li>        
-          <li>
-            <i>statistical models/methods</i>: <pkg>odfWeave.survey</pkg>, <pkg>rapport</pkg>
+            <i>statistical models/methods</i>: <pkg>rapport</pkg>
           </li>                                                  
         </ul>  
 
@@ -203,8 +197,6 @@
     <pkg>memisc</pkg>
     <pkg>miniCRAN</pkg>
     <pkg>NMOF</pkg>
-    <pkg>odfWeave</pkg>
-    <pkg>odfWeave.survey</pkg>
     <pkg>packrat</pkg>       
     <pkg>pander</pkg>
     <pkg>papeR</pkg>
