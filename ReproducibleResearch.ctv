@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="mxkuhn@gmail.com">Max Kuhn</maintainer>
-  <version>2018-04-18</version>
+  <version>2018-06-02</version>
   
   <info>
     <p>
@@ -125,14 +125,6 @@
    <p>
     The <pkg>ReporteRs</pkg> (formerly R2DOCX) package can create <tt>docx</tt> and <tt>pptx</tt> files.  <pkg>R2wd</pkg> (windows only) can also create Word documents from scratch and <pkg>R2PPT</pkg> (also windows only) can create PowerPoint slides. The <pkg>rtf</pkg> package does the same for Rich Text Format documents. 
    </p>
-   <p>
-    Object Conversion Functions:
-   </p>
-   <ul>   
-    <li>
-      <i>tables/cross-tabulations</i>: <pkg>apaStyle</pkg>
-    </li>
-   </ul>  
 
    <h1>
      Miscellaneous Tools
@@ -167,7 +159,6 @@
 
   <packagelist>
     <pkg>animation</pkg> 
-    <pkg>apaStyle</pkg>  
     <pkg>apsrtable</pkg>
     <pkg>archivist</pkg>    
     <pkg>ascii</pkg>
