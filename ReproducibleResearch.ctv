@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="mxkuhn@gmail.com">Max Kuhn</maintainer>
-  <version>2018-06-02</version>
+  <version>2018-07-15</version>
   
   <info>
     <p>
@@ -36,7 +36,7 @@
             <i>graphics</i>: <pkg>animation</pkg>, <pkg>Hmisc</pkg>, <code>grDevices:::pictex</code>, <pkg>sparktex</pkg>, <pkg>tikzDevice</pkg> 
           </li>    
           <li>
-            <i>statistical models/methods</i>: <pkg>apsrtable</pkg>, <pkg>memisc</pkg>, <pkg>quantreg</pkg>, <pkg>rms</pkg>, <pkg>stargazer</pkg>, <pkg>suRtex</pkg>, <pkg>TeachingSampling</pkg>, <pkg>texreg</pkg>, <pkg>xtable</pkg>, <pkg>ztable</pkg>
+            <i>statistical models/methods</i>: <pkg>apsrtable</pkg>, <pkg>memisc</pkg>, <pkg>quantreg</pkg>, <pkg>rms</pkg>, <pkg>stargazer</pkg>, <pkg>suRtex</pkg>, <pkg>texreg</pkg>, <pkg>xtable</pkg>, <pkg>ztable</pkg>
           </li> 
           <li>
             <i>bibtex</i>: <pkg>bibtex</pkg> and <pkg>RefManageR</pkg>
@@ -214,7 +214,6 @@
     <pkg>suRtex</pkg>
     <pkg>SweaveListingUtils</pkg>
     <pkg>tables</pkg>
-    <pkg>TeachingSampling</pkg>
     <pkg>texreg</pkg>
     <pkg>tikzDevice</pkg>
     <pkg>tth</pkg>
