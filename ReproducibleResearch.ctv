@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="mxkuhn@gmail.com">Max Kuhn</maintainer>
-  <version>2018-07-15</version>
+  <version>2018-07-18</version>
   
   <info>
     <p>
@@ -123,7 +123,7 @@
     Microsoft Formats
    </h2>
    <p>
-    The <pkg>ReporteRs</pkg> (formerly R2DOCX) package can create <tt>docx</tt> and <tt>pptx</tt> files.  <pkg>R2wd</pkg> (windows only) can also create Word documents from scratch and <pkg>R2PPT</pkg> (also windows only) can create PowerPoint slides. The <pkg>rtf</pkg> package does the same for Rich Text Format documents. 
+    <pkg>R2wd</pkg> (windows only) can create Word documents from scratch and <pkg>R2PPT</pkg> (also windows only) can create PowerPoint slides. The <pkg>rtf</pkg> package does the same for Rich Text Format documents. 
    </p>
 
    <h1>
@@ -202,7 +202,6 @@
     <pkg>rbundler</pkg>
     <pkg>RefManageR</pkg>
     <pkg>reporttools</pkg>    
-    <pkg>ReporteRs</pkg>
     <pkg>resumer</pkg>
     <pkg>rmarkdown</pkg>
     <pkg priority="core">rms</pkg>
