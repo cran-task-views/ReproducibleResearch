@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="mxkuhn@gmail.com">Max Kuhn</maintainer>
-  <version>2018-07-18</version>
+  <version>2018-07-30</version>
   
   <info>
     <p>
@@ -137,7 +137,7 @@
 
    <h2>Formatting Tools</h2> 
    <p>
-    <pkg>formatR</pkg>, <pkg>highlight</pkg>, <pkg>highr</pkg>, and <pkg>SweaveListingUtils</pkg> can be used to color and/or format R code.                                                 
+    <pkg>formatR</pkg>, <pkg>highlight</pkg>, and <pkg>highr</pkg> can be used to color and/or format R code.                                                 
    </p>  
    <p>
     Packages <pkg>humanFormat</pkg>, <pkg>lubridate</pkg>, <pkg>prettyunits</pkg>, and <pkg>rprintf</pkg> have functions to better format data. 
@@ -211,7 +211,6 @@
     <pkg>sparktex</pkg>
     <pkg>stargazer</pkg>
     <pkg>suRtex</pkg>
-    <pkg>SweaveListingUtils</pkg>
     <pkg>tables</pkg>
     <pkg>texreg</pkg>
     <pkg>tikzDevice</pkg>
