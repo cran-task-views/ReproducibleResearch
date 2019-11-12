@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView>
 
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
-  <maintainer email="alison@rstudio.com">Alison Hill, John Blischak</maintainer>
+  <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
   <version>2019-11-11</version>
 
   <info>
