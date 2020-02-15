@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2019-11-11</version>
+  <version>2020-02-15</version>
 
   <info>
     <p>
@@ -194,7 +194,6 @@
       <li><pkg>RSuite</pkg>: Supports safe and reproducible solutions development in R. It will help you with environment separation per project, dependency management, local packages creation and preparing deployment packs for your solutions.</li>
       <li><pkg>tinyProject</pkg>: Creates useful files and folders for data analysis projects and provides functions to manage data, scripts and output files.</li>
       <li><pkg>workflowr</pkg>: Provides a workflow for your analysis projects by combining literate programming ('knitr' and 'rmarkdown') and version control ('Git', via 'git2r') to generate a website containing time-stamped, versioned, and documented results.</li>
-      <li><pkg>zoon</pkg>: Reproducible and remixable species distribution modelling.</li>
     </ul>
 
    <h1>Formatting Tools</h1>
@@ -301,7 +300,6 @@
     <pkg>usethis</pkg>
     <pkg>workflowr</pkg>
     <pkg priority="core">xtable</pkg>
-    <pkg>zoon</pkg>
     <pkg>ztable</pkg>
   </packagelist>
 
