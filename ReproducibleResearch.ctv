@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-02-15</version>
+  <version>2020-03-04</version>
 
   <info>
     <p>
@@ -206,7 +206,7 @@
 
    <h1>Format Convertors </h1>
    <p>
-    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions.
+    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word.
    </p>
 
    <h1>Object Caching Packages</h1>
@@ -295,7 +295,6 @@
     <pkg>texreg</pkg>
     <pkg>tikzDevice</pkg>
     <pkg>tinyProject</pkg>
-    <pkg>tth</pkg>
     <pkg>tufterhandout</pkg>
     <pkg>usethis</pkg>
     <pkg>workflowr</pkg>
