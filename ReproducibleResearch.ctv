@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-03-04</version>
+  <version>2020-04-21</version>
 
   <info>
     <p>
@@ -189,7 +189,6 @@
       <li><pkg>orderly</pkg>: Order, create and store reports from R.</li>
       <li><pkg>projects</pkg>: Provides a project infrastructure with a focus on manuscript creation.</li>
       <li><pkg>ProjectTemplate</pkg>: Provides functions to automatically build a directory structure for a new R project. Using this structure, 'ProjectTemplate' automates data loading, preprocessing, library importing and unit testing.</li>
-      <li><pkg>reports</pkg>: Assists in writing reports and presentations by providing a frame work that brings together existing R, LaTeX/.docx and Pandoc tools.</li>
       <li><pkg>represtools</pkg>: Reproducible research tools automates the creation of an analysis directory structure and work flow. There are R markdown skeletons which encapsulate typical analytic work flow steps. Functions will create appropriate modules which may pass data from one step to another.</li>
       <li><pkg>RSuite</pkg>: Supports safe and reproducible solutions development in R. It will help you with environment separation per project, dependency management, local packages creation and preparing deployment packs for your solutions.</li>
       <li><pkg>tinyProject</pkg>: Creates useful files and folders for data analysis projects and provides functions to manage data, scripts and output files.</li>
@@ -277,7 +276,6 @@
     <pkg>renv</pkg>
     <pkg>repo</pkg>
     <pkg>RepoGenerator</pkg>
-    <pkg>reports</pkg>
     <pkg>reporttools</pkg>
     <pkg>represtools</pkg>
     <pkg>resumer</pkg>
