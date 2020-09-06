@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-04-27</version>
+  <version>2020-09-05</version>
 
   <info>
     <p>
@@ -192,6 +192,7 @@
       <li><pkg>RSuite</pkg>: Supports safe and reproducible solutions development in R. It will help you with environment separation per project, dependency management, local packages creation and preparing deployment packs for your solutions.</li>
       <li><pkg>tinyProject</pkg>: Creates useful files and folders for data analysis projects and provides functions to manage data, scripts and output files.</li>
       <li><pkg>workflowr</pkg>: Provides a workflow for your analysis projects by combining literate programming ('knitr' and 'rmarkdown') and version control ('Git', via 'git2r') to generate a website containing time-stamped, versioned, and documented results.</li>
+      <li><pkg>zoon</pkg>: Reproducible and remixable species distribution modelling.</li>
     </ul>
 
    <h1>Formatting Tools</h1>
@@ -204,7 +205,7 @@
 
    <h1>Format Convertors </h1>
    <p>
-    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word.
+    <pkg>pander</pkg> can be used for rendering R objects into <a href="http://pandoc.org/">Pandoc's</a> markdown. <pkg>knitr</pkg> has the function <tt>pandoc</tt> that can call an installed version of <a href="http://pandoc.org/">Pandoc</a> to convert documents between formats such as Markdown, HTML, LaTeX, PDF and Word. <pkg>tth</pkg> facilitates TeX to HTML/MathML conversions.
    </p>
 
    <h1>Object Caching Packages</h1>
@@ -291,10 +292,12 @@
     <pkg>texreg</pkg>
     <pkg>tikzDevice</pkg>
     <pkg>tinyProject</pkg>
+    <pkg>tth</pkg>
     <pkg>tufterhandout</pkg>
     <pkg>usethis</pkg>
     <pkg>workflowr</pkg>
     <pkg priority="core">xtable</pkg>
+    <pkg>zoon</pkg>
     <pkg>ztable</pkg>
   </packagelist>
 
