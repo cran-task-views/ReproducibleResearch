@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-09-07</version>
+  <version>2020-09-22</version>
 
   <info>
     <p>
@@ -112,6 +112,7 @@
     </h2>
       <p>
         The <pkg>knitr</pkg> package can process markdown files without assistance. The packages  <pkg>markdown</pkg> and <pkg>rmarkdown</pkg> have general tools for working with documents in this format. <pkg>lazyWeave</pkg> can create markdown format documents from scratch.
+        Also, the <pkg>ascii</pkg> package can write R objects to the <a href="https://asciidoc.org/">AsciiDoc</a> format.
       </p>
       <p>
         Object Conversion Functions:
@@ -243,6 +244,7 @@
     <pkg>animation</pkg>
     <pkg>apsrtable</pkg>
     <pkg>archivist</pkg>
+    <pkg>ascii</pkg>
     <pkg>bibtex</pkg>
     <pkg>brew</pkg>
     <pkg>cabinets</pkg>
