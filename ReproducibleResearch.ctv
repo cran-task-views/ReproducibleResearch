@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-09-22</version>
+  <version>2020-10-02</version>
 
   <info>
     <p>
@@ -19,6 +19,13 @@
       <a href="https://github.com/benmarwick">Ben Marwick</a>, and
       <a href="https://github.com/nuest">Daniel Nüst</a>
       for their useful feedback and contributions.
+    </p>
+
+    <p>
+      If you would like to recommend a package to be included in this
+      task view, please open a
+      <a href="https://github.com/jdblischak/reproducible-research-ctv/issues/new?template=package_suggestion.md">GitHub Issue</a>
+      to discuss.
     </p>
     <h1>Literate Programming</h1>
     <p>
@@ -332,6 +339,7 @@
   </packagelist>
 
   <links>
+    <a href="https://github.com/jdblischak/reproducible-research-ctv">GitHub repository for editing this task view</a>
     <a href="https://doi.org/10.1007/978-3-642-57489-4_89">Sweave: Dynamic Generation of Statistical Reports Using Literate Data Analysis</a>
     <a href="http://yihui.name/knitr/">knitr: Elegant, flexible and fast dynamic report generation with R</a>
     <bioc>weaver</bioc>
