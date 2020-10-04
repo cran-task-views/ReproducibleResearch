@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-10-02</version>
+  <version>2020-10-04</version>
 
   <info>
     <p>
@@ -73,7 +73,7 @@
       </p>
         <ul>
           <li>
-            <pkg>Hmisc</pkg> contains a function to correctly escape special characters. <pkg>resumer</pkg> creates resumes. Standardized exams can be created using the <pkg>exams</pkg> package.
+            <pkg>Hmisc</pkg> contains a function to correctly escape special characters. Standardized exams can be created using the <pkg>exams</pkg> package.
           </li>
         </ul>
    <h2>
@@ -312,7 +312,6 @@
     <pkg>RepoGenerator</pkg>
     <pkg>reporttools</pkg>
     <pkg>represtools</pkg>
-    <pkg>resumer</pkg>
     <pkg>rmarkdown</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>rprintf</pkg>
