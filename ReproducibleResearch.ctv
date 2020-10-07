@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-10-04</version>
+  <version>2020-10-07</version>
 
   <info>
     <p>
@@ -209,7 +209,6 @@
       and <code>ProjectTemplate::run.project()</code> executes each R script that is saved in the <code>src/</code> subdirectory.
     </p>
     <ul>
-      <li><pkg>adapr</pkg>: Tracks reading and writing within R scripts that are organized into a directed acyclic graph.</li>
       <li><pkg>exreport</pkg>: Analysis of experimental results and automatic report generation in both interactive HTML and LaTeX.</li>
       <li><pkg>madrat</pkg>: Provides a framework which should improve reproducibility and transparency in data processing. It provides functionality such as automatic meta data creation and management, rudimentary quality management, data caching, work-flow management and data aggregation.</li>
       <li><pkg>makeProject</pkg>: This package creates an empty framework of files and directories for the "Load, Clean, Func, Do" structure described by Josh Reich.</li>
@@ -247,7 +246,6 @@
   </info>
 
   <packagelist>
-    <pkg>adapr</pkg>
     <pkg>animation</pkg>
     <pkg>apsrtable</pkg>
     <pkg>archivist</pkg>
