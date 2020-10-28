@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-10-07</version>
+  <version>2020-10-28</version>
 
   <info>
     <p>
@@ -107,7 +107,7 @@
             <i>statistical models/methods</i>: <pkg>rapport</pkg>, <pkg>stargazer</pkg>, <pkg>xtable</pkg>
           </li>
           <li>
-            <i>others</i>: <pkg>knitcitations</pkg>, <pkg>RefManageR</pkg>
+            <i>others</i>: <pkg>RefManageR</pkg>
           </li>
         </ul>
       <p>
@@ -276,7 +276,6 @@
     <pkg>liftr</pkg>
     <pkg>lubridate</pkg>
     <pkg>kfigr</pkg>
-    <pkg>knitcitations</pkg>
     <pkg>knitLatex</pkg>
     <pkg priority="core">knitr</pkg>
     <pkg>madrat</pkg>
