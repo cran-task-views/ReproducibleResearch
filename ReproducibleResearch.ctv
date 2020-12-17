@@ -149,6 +149,7 @@
      The <pkg>officer</pkg> (formerly ReporteRs and before that R2DOCX) package can create <tt>docx</tt> and <tt>pptx</tt> files.
      <pkg>R2wd</pkg> (windows only) can also create Word documents from scratch and <pkg>R2PPT</pkg> (also windows only) can create PowerPoint slides. The <pkg>rtf</pkg> package does the same for Rich Text Format documents.
      The <pkg>openxlsx</pkg> package creates <tt>xlsx</tt> files.
+     The <pkg>readODS</pkg> package can read and write Open Document Spreadsheets.
    </p>
    <p>
      Object Conversion Functions:
@@ -165,7 +166,7 @@
     <h1>Pipeline Toolkits</h1>
 
 <p>
-  <a href="https://github.com/wlandau/awesome-pipeline/blob/master/README.md">Pipeline toolkits</a> help maintain and verify reproducibility. They synchronize computational output with the underlying code and data, and they tell the user when everything is up to date. In other words, they provide concrete evidence that results are re-creatable from the starting materials, and the data analysis project does not need to rerun from scratch. The <pkg>drake</pkg> package is such a pipeline toolkit. It is similar to <a href="https://www.gnu.org/software/make/">GNU Make</a>, but it is R-focused.
+  <a href="https://github.com/pditommaso/awesome-pipeline">Pipeline toolkits</a> help maintain and verify reproducibility. They synchronize computational output with the underlying code and data, and they tell the user when everything is up to date. In other words, they provide concrete evidence that results are re-creatable from the starting materials, and the data analysis project does not need to rerun from scratch. The <pkg>drake</pkg> package is such a pipeline toolkit. It is similar to <a href="https://www.gnu.org/software/make/">GNU Make</a>, but it is R-focused.
 </p>
 
 <ul>
@@ -176,7 +177,7 @@
 
    <h1>Package Reproducibility</h1>
    <p>
-     R also has tools for ensuring that specific packages versions can be required for analyses. <pkg>checkpoint</pkg>, <pkg>rbundler</pkg>, <pkg>packrat</pkg> and <pkg>renv</pkg> install packages required for a project to a local archive as they existed at a specified point in time. This allows specific package versions to be maintained over time and different users.
+     R also has tools for ensuring that specific packages versions can be required for analyses. <pkg>checkpoint</pkg>, <pkg>groundhog</pkg>, <pkg>rbundler</pkg>, <pkg>packrat</pkg> and <pkg>renv</pkg> install packages required for a project to a local archive as they existed at a specified point in time. This allows specific package versions to be maintained over time and different users.
      The <pkg>miniCRAN</pkg> and <pkg>switchr</pkg> packages facilitate the creation of local CRAN-like repositories and their simultaneous operation.
      <pkg>liftr</pkg> allows to containerize an R Markdown document using <a href="https://docker.com/">Docker</a> by providing additional metadata.
    </p>
@@ -218,6 +219,7 @@
       <li><pkg>represtools</pkg>: Reproducible research tools automates the creation of an analysis directory structure and work flow. There are R markdown skeletons which encapsulate typical analytic work flow steps. Functions will create appropriate modules which may pass data from one step to another.</li>
       <li><pkg>RSuite</pkg>: Supports safe and reproducible solutions development in R. It will help you with environment separation per project, dependency management, local packages creation and preparing deployment packs for your solutions.</li>
       <li><pkg>tinyProject</pkg>: Creates useful files and folders for data analysis projects and provides functions to manage data, scripts and output files.</li>
+      <li><pkg>worcs</pkg>: Create reproducible and transparent research projects in 'R'. This package is based on the Workflow for Open Reproducible Code in Science (WORCS), a step-by-step procedure based on best practices for Open Science.</li>
       <li><pkg>workflowr</pkg>: Provides a workflow for your analysis projects by combining literate programming ('knitr' and 'rmarkdown') and version control ('Git', via 'git2r') to generate a website containing time-stamped, versioned, and documented results.</li>
       <li><pkg>zoon</pkg>: Reproducible and remixable species distribution modelling.</li>
     </ul>
@@ -240,7 +242,7 @@
     When using <code>Sweave</code> and <pkg>knitr</pkg> it can be advantageous to <i>cache</i> the results of time consuming code chunks if the document will be re-processed (i.e. during debugging). <pkg>knitr</pkg> facilitates object caching and the Bioconductor package <bioc>weaver</bioc> can be used with <code>Sweave</code>.
    </p>
    <p>
-   Non-literate programming packages to facilitating caching/archiving are <pkg>R.cache</pkg>, <pkg>archivist</pkg>, and <pkg>storr</pkg>.
+   Non-literate programming packages to facilitating caching/archiving are <pkg>R.cache</pkg>, <pkg>archivist</pkg>, <pkg>storr</pkg>, and <pkg>trackr</pkg>.
    </p>
 
   </info>
@@ -262,6 +264,7 @@
     <pkg>flowr</pkg>
     <pkg>formatR</pkg>
     <pkg>formattable</pkg>
+    <pkg>groundhog</pkg>
     <pkg>here</pkg>
     <pkg>highlight</pkg>
     <pkg>highr</pkg>
@@ -303,6 +306,7 @@
     <pkg>R2wd</pkg>
     <pkg>rapport</pkg>
     <pkg>rbundler</pkg>
+    <pkg>readODS</pkg>
     <pkg>RefManageR</pkg>
     <pkg>renv</pkg>
     <pkg>repo</pkg>
@@ -324,9 +328,11 @@
     <pkg>texreg</pkg>
     <pkg>tikzDevice</pkg>
     <pkg>tinyProject</pkg>
+    <pkg>trackr</pkg>
     <pkg>tth</pkg>
     <pkg>tufterhandout</pkg>
     <pkg>usethis</pkg>
+    <pkg>worcs</pkg>
     <pkg>workflowr</pkg>
     <pkg>xaringan</pkg>
     <pkg priority="core">xtable</pkg>
@@ -351,7 +357,7 @@
     <a href="http://www.R-project.org/doc/Rnews/Rnews_2006-2.pdf">Garbade, Burgard: Using R/Sweave in Everyday Clinical Practice</a>
     <a href="http://www.R-project.org/doc/Rnews/Rnews_2008-1.pdf">Gorjanc: Using Sweave with LyX</a>
     <a href="http://www.R-project.org/doc/Rnews/Rnews_2003-3.pdf">Lecoutre: The R2HTML Package</a>
-    <a href="https://github.com/wlandau/awesome-pipeline/blob/master/README.md">List of pipeline toolkits</a>
+    <a href="https://github.com/pditommaso/awesome-pipeline">List of pipeline toolkits</a>
     <a href="https://github.com/o2r-project/ctv-computational-environments#readme">Computational Environments and Reproducibility</a>
     <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">Bryan: Project-oriented workflow</a>
     <a href="https://ropensci.github.io/reproducibility-guide/">rOpenSci: Reproducibility in Science</a>
