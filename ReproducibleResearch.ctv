@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2020-10-28</version>
+  <version>2020-12-16</version>
 
   <info>
     <p>
@@ -62,7 +62,7 @@
             <i>statistical models/methods</i>: <pkg>apsrtable</pkg>, <pkg>memisc</pkg>, <pkg>quantreg</pkg>, <pkg>rms</pkg>, <pkg>stargazer</pkg>, <pkg>suRtex</pkg>, <pkg>texreg</pkg>, <pkg>xtable</pkg>, <pkg>ztable</pkg>
           </li>
           <li>
-            <i>bibtex</i>: <pkg>bibtex</pkg>
+            <i>bibtex</i>: <pkg>bibtex</pkg> and <pkg>RefManageR</pkg>
           </li>
           <li>
             <i>others</i>: <pkg>latex2exp</pkg> converts LaTeX equations to <tt>plotmath</tt> expressions.
@@ -106,6 +106,9 @@
           <li>
             <i>statistical models/methods</i>: <pkg>rapport</pkg>, <pkg>stargazer</pkg>, <pkg>xtable</pkg>
           </li>
+	  <li>
+	    <i>others</i>: <pkg>RefManageR</pkg>
+	  </li>
         </ul>
       <p>
         Miscellaneous Tools: <pkg>htmltools</pkg> has various tools for working with HTML. <pkg>tufterhandout</pkg> for creating Tufte-style handouts
@@ -131,6 +134,9 @@
           <li>
             <i>statistical models/methods</i>: <pkg>pander</pkg>, <pkg>papeR</pkg>, <pkg>rapport</pkg>, <pkg>texreg</pkg>
           </li>
+	  <li>
+	    <i>others</i>: <pkg>RefManageR</pkg>
+	  </li>
         </ul>
       <p>
         Miscellaneous Tools: <pkg>tufterhandout</pkg> for creating Tufte-style handouts. <pkg>kfigr</pkg> allows for figure indexing in markdown documents.
@@ -297,6 +303,7 @@
     <pkg>R2wd</pkg>
     <pkg>rapport</pkg>
     <pkg>rbundler</pkg>
+    <pkg>RefManageR</pkg>
     <pkg>renv</pkg>
     <pkg>repo</pkg>
     <pkg>RepoGenerator</pkg>
