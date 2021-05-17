@@ -4,7 +4,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2021-02-21</version>
+  <version>2021-05-17</version>
 
   <info>
     <p>
@@ -219,7 +219,6 @@
       <li><pkg>ProjectTemplate</pkg>: Provides functions to automatically build a directory structure for a new R project. Using this structure, 'ProjectTemplate' automates data loading, preprocessing, library importing and unit testing.</li>
       <li><pkg>reportfactory</pkg>: Provides an infrastructure for handling multiple R Markdown reports, including automated curation and time-stamping of outputs, parameterisation and provision of helper functions to manage dependencies.</li>
       <li><pkg>represtools</pkg>: Reproducible research tools automates the creation of an analysis directory structure and work flow. There are R markdown skeletons which encapsulate typical analytic work flow steps. Functions will create appropriate modules which may pass data from one step to another.</li>
-      <li><pkg>RSuite</pkg>: Supports safe and reproducible solutions development in R. It will help you with environment separation per project, dependency management, local packages creation and preparing deployment packs for your solutions.</li>
       <li><pkg>tinyProject</pkg>: Creates useful files and folders for data analysis projects and provides functions to manage data, scripts and output files.</li>
       <li><pkg>worcs</pkg>: Create reproducible and transparent research projects in 'R'. This package is based on the Workflow for Open Reproducible Code in Science (WORCS), a step-by-step procedure based on best practices for Open Science.</li>
       <li><pkg>workflowr</pkg>: Provides a workflow for your analysis projects by combining literate programming ('knitr' and 'rmarkdown') and version control ('Git', via 'git2r') to generate a website containing time-stamped, versioned, and documented results.</li>
@@ -320,7 +319,6 @@
     <pkg>rmarkdown</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>rprintf</pkg>
-    <pkg>RSuite</pkg>
     <pkg>rtf</pkg>
     <pkg>SortableHTMLTables</pkg>
     <pkg>sparktex</pkg>
