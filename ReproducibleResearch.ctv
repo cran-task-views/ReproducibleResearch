@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2021-06-13</version>
+  <version>2021-06-15</version>
   <info>
     <p>
       The goal of reproducible research is to tie specific instructions to data
@@ -155,7 +155,6 @@
           <pkg>hwriter</pkg>,
           <pkg>knitr</pkg>,
           <pkg>lazyWeave</pkg>,
-          <pkg>SortableHTMLTables</pkg>,
           <pkg>texreg</pkg>,
           <pkg>ztable</pkg>
       </li>
@@ -513,7 +512,6 @@
     <pkg priority="core">rms</pkg>
     <pkg>rprintf</pkg>
     <pkg>rtf</pkg>
-    <pkg>SortableHTMLTables</pkg>
     <pkg>sparktex</pkg>
     <pkg>stargazer</pkg>
     <pkg>storr</pkg>
