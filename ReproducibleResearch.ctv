@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2021-06-15</version>
+  <version>2021-07-08</version>
   <info>
     <p>
       The goal of reproducible research is to tie specific instructions to data
@@ -72,6 +72,7 @@
       <li>
         <i>tables/cross-tabulations</i>:
           <pkg>Hmisc</pkg>,
+          <pkg>huxtable</pkg>,
           <pkg>lazyWeave</pkg>,
           <pkg>knitLatex</pkg>,
           <pkg>knitr</pkg>,
@@ -150,8 +151,10 @@
           <pkg>DT</pkg>,
           <pkg>flextable</pkg>,
           <pkg>formattable</pkg>,
+          <pkg>gt</pkg>,
           <pkg>htmlTable</pkg>,
           <pkg>HTMLUtils</pkg>,
+          <pkg>huxtable</pkg>,
           <pkg>hwriter</pkg>,
           <pkg>knitr</pkg>,
           <pkg>lazyWeave</pkg>,
@@ -234,11 +237,18 @@
     <ul>
       <li>
         <i>tables/cross-tabulations</i>:
-          <pkg>flextable</pkg>
+          <pkg>flextable</pkg>,
+          <pkg>huxtable</pkg>,
+          <pkg>pharmaRTF</pkg>,
+          <pkg>r2rtf</pkg>
       </li>
       <li>
         <i>graphics</i>:
           <pkg>mschart</pkg>
+      </li>
+      <li>
+        <i>others</i>:
+          <pkg>unrtf</pkg>
       </li>
     </ul>
     <h1>Pipeline Toolkits</h1>
@@ -277,17 +287,55 @@
     </ul>
     <h1>Package Reproducibility</h1>
     <p>
-      R also has tools for ensuring that specific packages versions can be
-      required for analyses. <pkg>checkpoint</pkg>, <pkg>groundhog</pkg>,
-      <pkg>rbundler</pkg>, <pkg>packrat</pkg> and <pkg>renv</pkg> install
-      packages required for a project to a local archive as they existed at a
-      specified point in time. This allows specific package versions to be
-      maintained over time and different users. The <pkg>miniCRAN</pkg> and
-      <pkg>switchr</pkg> packages facilitate the creation of local CRAN-like
-      repositories and their simultaneous operation. <pkg>liftr</pkg> allows to
-      containerize an R Markdown document using <a
-      href="https://docker.com/">Docker</a> by providing additional metadata.
+      R has various tools for ensuring that specific packages versions can be
+      required for analyses. As an example, the <pkg>renv</pkg> package installs
+      packages in project-specific directory, records "snapshots" of the current
+      package versions in a "lockfile", and restores the package setup on a
+      different machine.
     </p>
+    <ul>
+      <li>
+        <pkg>checkpoint</pkg>: Allows you to install packages as they existed on
+        CRAN on a specific snapshot date as if you had a CRAN time machine.
+      </li>
+      <li>
+        <pkg>groundhog</pkg>: Make R scripts that rely on packages reproducible,
+        by ensuring that every time a given script is run, the same version of
+        the used packages are loaded.
+      </li>
+      <li>
+        <pkg>liftr</pkg>: Persistent reproducible reporting by containerization
+        of R Markdown documents.
+      </li>
+      <li>
+        <pkg>miniCRAN</pkg>: Makes it possible to create an internally
+        consistent repository consisting of selected packages from CRAN-like
+        repositories.
+      </li>
+      <li>
+        <pkg>packrat</pkg>: Manage the R packages your project depends on in an
+        isolated, portable, and reproducible way.
+      </li>
+      <li>
+        <pkg>rbundler</pkg>: Manages a project-specific library for dependency
+        package installation.
+      </li>
+      <li>
+        <pkg>renv</pkg>: Create and manage project-local R libraries, save the
+        state of these libraries to a 'lockfile', and later restore your library
+        as required.
+      </li>
+      <li>
+        <pkg>Require</pkg>: A single key function, 'Require' that wraps
+        'install.packages', 'remotes::install_github',
+        'versions::install.versions', and 'base::require' that allows for
+        reproducible workflows.
+      </li>
+      <li>
+        <pkg>switchr</pkg>: Provides an abstraction for managing, installing,
+        and switching between sets of installed R packages.
+      </li>
+    </ul>
     <h1>Project Workflows</h1>
     <p>
       Successfully completing a data analysis project often requires much more
@@ -409,8 +457,10 @@
     </ul>
     <h1>Formatting Tools</h1>
     <p>
-      <pkg>formatR</pkg>, <pkg>highlight</pkg>, and <pkg>highr</pkg> can be used
-      to color and/or format R code.
+      <pkg>formatR</pkg> and <pkg>styler</pkg> can be used to format R code.
+    </p>
+    <p>
+      <pkg>highlight</pkg> and <pkg>highr</pkg> can be used to color R code.
     </p>
     <p>
       Packages <pkg>humanFormat</pkg>, <pkg>lubridate</pkg>,
@@ -436,8 +486,8 @@
     </p>
     <p>
       Non-literate programming packages to facilitating caching/archiving are
-      <pkg>R.cache</pkg>, <pkg>archivist</pkg>, <pkg>storr</pkg>, and
-      <pkg>trackr</pkg>.
+      <pkg>archivist</pkg>, <pkg>R.cache</pkg>, <pkg>reproducible</pkg>,
+      <pkg>storr</pkg>, and <pkg>trackr</pkg>.
     </p>
   </info>
   <packagelist>
@@ -461,11 +511,13 @@
     <pkg>here</pkg>
     <pkg>highlight</pkg>
     <pkg>highr</pkg>
+    <pkg>gt</pkg>
     <pkg priority="core">Hmisc</pkg>
     <pkg>htmlTable</pkg>
     <pkg>htmltools</pkg>
     <pkg>HTMLUtils</pkg>
     <pkg>humanFormat</pkg>
+    <pkg>huxtable</pkg>
     <pkg>hwriter</pkg>
     <pkg>latex2exp</pkg>
     <pkg>lazyWeave</pkg>
@@ -488,6 +540,7 @@
     <pkg>packrat</pkg>
     <pkg>pander</pkg>
     <pkg>papeR</pkg>
+    <pkg>pharmaRTF</pkg>
     <pkg>prettyunits</pkg>
     <pkg>prodigenr</pkg>
     <pkg>projects</pkg>
@@ -497,6 +550,7 @@
     <pkg>R.rsp</pkg>
     <pkg priority="core">R2HTML</pkg>
     <pkg>R2PPT</pkg>
+    <pkg>r2rtf</pkg>
     <pkg>R2wd</pkg>
     <pkg>rapport</pkg>
     <pkg>rbundler</pkg>
@@ -508,6 +562,8 @@
     <pkg>reportfactory</pkg>
     <pkg>reporttools</pkg>
     <pkg>represtools</pkg>
+    <pkg>reproducible</pkg>
+    <pkg>Require</pkg>
     <pkg>rmarkdown</pkg>
     <pkg priority="core">rms</pkg>
     <pkg>rprintf</pkg>
@@ -515,6 +571,7 @@
     <pkg>sparktex</pkg>
     <pkg>stargazer</pkg>
     <pkg>storr</pkg>
+    <pkg>styler</pkg>
     <pkg>suRtex</pkg>
     <pkg>switchr</pkg>
     <pkg>tables</pkg>
@@ -525,6 +582,7 @@
     <pkg>trackr</pkg>
     <pkg>tth</pkg>
     <pkg>tufterhandout</pkg>
+    <pkg>unrtf</pkg>
     <pkg>usethis</pkg>
     <pkg>worcs</pkg>
     <pkg>workflowr</pkg>
