@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2021-07-08</version>
+  <version>2021-12-20</version>
   <info>
     <p>
       The goal of reproducible research is to tie specific instructions to data
@@ -276,6 +276,11 @@
         cluster.
       </li>
       <li>
+        <pkg>makepipe</pkg>: A suite of tools for transforming an existing
+        workflow into a self-documenting pipeline with very minimal upfront
+        costs.
+      </li>
+      <li>
         <pkg>repo</pkg>: A data manager meant to avoid manual storage/retrieval
         of data to/from the file system.
       </li>
@@ -528,6 +533,7 @@
     <pkg>knitLatex</pkg>
     <pkg priority="core">knitr</pkg>
     <pkg>madrat</pkg>
+    <pkg>makepipe</pkg>
     <pkg>makeProject</pkg>
     <pkg>markdown</pkg>
     <pkg>memisc</pkg>
@@ -611,7 +617,7 @@
     <a href="https://github.com/pditommaso/awesome-pipeline">List of pipeline toolkits</a>
     <a href="https://github.com/o2r-project/ctv-computational-environments#readme">Computational Environments and Reproducibility</a>
     <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">Bryan: Project-oriented workflow</a>
-    <a href="https://ropensci.github.io/reproducibility-guide/">rOpenSci: Reproducibility in Science</a>
+    <a href="https://ropensci-archive.github.io/reproducibility-guide/">rOpenSci: Reproducibility in Science</a>
     <a href="https://doi.org/10.1198/106186007X178663">Temple Lang, Gentleman: Statistical Analyses and Reproducible Research</a>
     <a href="https://doi.org/10.1080/00031305.2017.1375986">Marwick, Boettiger, Mullen: Packaging Data Analytical Work Reproducibly Using R (and Friends)</a>
     <a href="https://yihui.org/rlp/">Xie: Write An R Package Using Literate Programming Techniques</a>
