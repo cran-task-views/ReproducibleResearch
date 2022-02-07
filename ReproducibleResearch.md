@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill
 email: jdblischak@gmail.com
-version: 2021-12-29
+version: 2022-02-07
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -58,6 +58,7 @@ class.
 Object Conversion Functions:
 
 -   *summary tables/statistics* :
+    `r pkg("gtsummary")`,
     `r pkg("Hmisc", priority = "core")`,
     `r pkg("NMOF")`, `r pkg("papeR")`,
     `r pkg("quantreg")`, `r pkg("rapport")`,
@@ -65,7 +66,8 @@ Object Conversion Functions:
     `r pkg("tables")`,
     `r pkg("xtable", priority = "core")`,
     `r pkg("ztable")`
--   *tables/cross-tabulations* : `r pkg("Hmisc")`,
+-   *tables/cross-tabulations* :
+    `r pkg("gtsummary")`, `r pkg("Hmisc")`,
     `r pkg("huxtable")`, `r pkg("lazyWeave")`,
     `r pkg("knitLatex")`, `r pkg("knitr")`,
     `r pkg("reporttools")`, `r pkg("ztable")`
@@ -73,6 +75,7 @@ Object Conversion Functions:
     `r pkg("Hmisc")`, `grDevices:::pictex`,
     `r pkg("sparktex")`, `r pkg("tikzDevice")`
 -   *statistical models/methods* : `r pkg("apsrtable")`,
+    `r pkg("gtsummary")`,
     `r pkg("memisc")`, `r pkg("quantreg")`,
     `r pkg("rms", priority = "core")`,
     `r pkg("stargazer")`, `r pkg("suRtex")`,
@@ -109,15 +112,17 @@ For HTML slides, a combination of the `r pkg("knitr")` and
 
 Object Conversion Functions:
 
--   *summary tables/statistics* : `r pkg("stargazer")`
+-   *summary tables/statistics* : `r pkg("gtsummary")`, `r pkg("stargazer")`
 -   *tables/cross-tabulations* : `r pkg("DT")`,
     `r pkg("flextable")`,
     `r pkg("formattable")`, `r pkg("gt")`,
+    `r pkg("gtsummary")`,
     `r pkg("htmlTable")`, `r pkg("HTMLUtils")`,
     `r pkg("huxtable")`, `r pkg("hwriter")`,
     `r pkg("knitr")`, `r pkg("lazyWeave")`,
     `r pkg("texreg")`, `r pkg("ztable")`
--   *statistical models/methods* : `r pkg("rapport")`,
+-   *statistical models/methods* :
+    `r pkg("gtsummary")`, `r pkg("rapport")`,
     `r pkg("stargazer")`, `r pkg("xtable")`
 -   *others* : `r pkg("knitcitations")`,
     `r pkg("RefManageR")`
@@ -139,12 +144,14 @@ markdown format documents from scratch. Also, the
 
 Object Conversion Functions:
 
--   *summary tables/statistics* : `r pkg("papeR")`
+-   *summary tables/statistics* : `r pkg("gtsummary")`, `r pkg("papeR")`
 -   *tables/cross-tabulations* : `r pkg("DT")`,
     `r pkg("formattable")`,
+    `r pkg("gtsummary")`,
     `r pkg("htmlTable")`, `r pkg("knitr")`,
     `r pkg("lazyWeave")`, `r pkg("papeR")`
--   *statistical models/methods* : `r pkg("pander")`,
+-   *statistical models/methods* :
+    `r pkg("gtsummary")`, `r pkg("pander")`,
     `r pkg("papeR")`, `r pkg("rapport")`,
     `r pkg("texreg")`
 -   *others* : `r pkg("RefManageR")`
