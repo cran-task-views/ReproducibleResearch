@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill
 email: jdblischak@gmail.com
-version: 2022-02-07
+version: 2022-03-08
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -74,7 +74,7 @@ Object Conversion Functions:
 -   *graphics* : `r pkg("animation")`,
     `r pkg("Hmisc")`, `grDevices:::pictex`,
     `r pkg("sparktex")`, `r pkg("tikzDevice")`
--   *statistical models/methods* : `r pkg("apsrtable")`,
+-   *statistical models/methods* :
     `r pkg("gtsummary")`,
     `r pkg("memisc")`, `r pkg("quantreg")`,
     `r pkg("rms", priority = "core")`,
