@@ -106,6 +106,9 @@ For HTML slides, a combination of the `r pkg("knitr")` and
 [remark.js](https://remark.js.org/) (from the
 `r pkg("xaringan")` package).
 
+The packages `r pkg("blogdown")`, `r pkg("bookdown")`, and `r pkg("distill")`
+can create entire websites.
+
 Object Conversion Functions:
 
 -   *summary tables/statistics* : `r pkg("gtsummary")`, `r pkg("stargazer")`
