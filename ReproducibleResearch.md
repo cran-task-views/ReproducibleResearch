@@ -1,9 +1,9 @@
 ---
 name: ReproducibleResearch
 topic: Reproducible Research
-maintainer: John Blischak, Alison Hill
+maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg
 email: jdblischak@gmail.com
-version: 2022-03-08
+version: 2022-03-11
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -15,13 +15,9 @@ purpose can be split into groups for: literate programming, pipeline
 toolkits, package reproducibility, project workflows, code/data
 formatting tools, format convertors, and object caching.
 
-The maintainers gratefully acknowledge
-[Anna Krystalli](https://github.com/annakrystalli),
-[Max Kuhn](https://github.com/topepo),
-[Will Landau](https://github.com/wlandau),
-[Ben Marwick](https://github.com/benmarwick), and
-[Daniel Nüst](https://github.com/nuest) for their useful feedback and
-contributions.
+The current maintainers gratefully acknowledge
+[Max Kuhn](https://github.com/topepo)
+for originally creating and maintaining this task view.
 
 If you would like to recommend a package to be included in this task view,
 please e-mail the maintainer or submit an issue or pull request in the GitHub
