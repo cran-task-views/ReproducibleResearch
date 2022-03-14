@@ -1,7 +1,7 @@
 ---
 name: ReproducibleResearch
 topic: Reproducible Research
-maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg
+maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
 version: 2022-03-11
 source: https://github.com/cran-task-views/ReproducibleResearch/
