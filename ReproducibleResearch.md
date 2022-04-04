@@ -19,11 +19,6 @@ The current maintainers gratefully acknowledge
 [Max Kuhn](https://github.com/topepo)
 for originally creating and maintaining this task view.
 
-If you would like to recommend a package to be included in this task view,
-please e-mail the maintainer or submit an issue or pull request in the GitHub
-repository linked above.
-
-
 Literate Programming
 ====================
 
