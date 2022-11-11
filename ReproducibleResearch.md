@@ -355,12 +355,9 @@ document will be re-processed (i.e. during debugging).
 Bioconductor package `r bioc("weaver")` can be used with
 `Sweave`.
 
-Non-literate programming packages to facilitating caching/archiving are
+Non-literate programming packages to facilitate caching/archiving are
 `r pkg("archivist")`, `r pkg("R.cache")`,
-`r pkg("reproducible")`, `r pkg("storr")`, and
-`r pkg("trackr")`.
-
-
+`r pkg("reproducible")`, and `r pkg("storr")`
 
 ### Links
 -   [Sweave: Dynamic Generation of Statistical Reports Using Literate Data Analysis](https://doi.org/10.1007/978-3-642-57489-4_89)
