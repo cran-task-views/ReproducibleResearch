@@ -228,8 +228,6 @@ restores the package setup on a different machine.
     from CRAN-like repositories.
 -   `r pkg("packrat")`: Manage the R packages your project
     depends on in an isolated, portable, and reproducible way.
--   `r pkg("rbundler")`: Manages a project-specific library
-    for dependency package installation.
 -   `r pkg("renv")`: Create and manage project-local R
     libraries, save the state of these libraries to a 'lockfile', and
     later restore your library as required.
