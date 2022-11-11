@@ -111,6 +111,7 @@ Object Conversion Functions:
 
 -   *summary tables/statistics* :
     `r pkg("gtsummary")`,
+    `r pkg("parameters")`,
     `r pkg("stargazer")`,
     `r pkg("table1")`
 -   *tables/cross-tabulations* : `r pkg("DT")`,
@@ -150,7 +151,8 @@ Object Conversion Functions:
     `r pkg("formattable")`,
     `r pkg("gtsummary")`,
     `r pkg("htmlTable")`, `r pkg("knitr")`,
-    `r pkg("lazyWeave")`, `r pkg("papeR")`
+    `r pkg("lazyWeave")`, `r pkg("papeR")`,
+    `r pkg("parameters")`
 -   *statistical models/methods* :
     `r pkg("gtsummary")`, `r pkg("pander")`,
     `r pkg("papeR")`, `r pkg("rapport")`,
