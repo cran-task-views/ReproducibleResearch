@@ -54,6 +54,7 @@ Object Conversion Functions:
     `r pkg("NMOF")`, `r pkg("papeR")`,
     `r pkg("quantreg")`, `r pkg("rapport")`,
     `r pkg("reporttools")`, `r pkg("sparktex")`,
+    `r pkg("table1")`,
     `r pkg("tables")`,
     `r pkg("xtable", priority = "core")`,
     `r pkg("ztable")`
@@ -61,7 +62,9 @@ Object Conversion Functions:
     `r pkg("gtsummary")`, `r pkg("Hmisc")`,
     `r pkg("huxtable")`, `r pkg("lazyWeave")`,
     `r pkg("knitLatex")`, `r pkg("knitr")`,
-    `r pkg("reporttools")`, `r pkg("ztable")`
+    `r pkg("reporttools")`,
+    `r pkg("table1")`,
+    `r pkg("ztable")`
 -   *graphics* : `r pkg("animation")`,
     `r pkg("Hmisc")`, `grDevices:::pictex`,
     `r pkg("sparktex")`, `r pkg("tikzDevice")`
@@ -106,7 +109,10 @@ can create entire websites.
 
 Object Conversion Functions:
 
--   *summary tables/statistics* : `r pkg("gtsummary")`, `r pkg("stargazer")`
+-   *summary tables/statistics* :
+    `r pkg("gtsummary")`,
+    `r pkg("stargazer")`,
+    `r pkg("table1")`
 -   *tables/cross-tabulations* : `r pkg("DT")`,
     `r pkg("flextable")`,
     `r pkg("formattable")`, `r pkg("gt")`,
@@ -114,6 +120,7 @@ Object Conversion Functions:
     `r pkg("htmlTable")`, `r pkg("HTMLUtils")`,
     `r pkg("huxtable")`, `r pkg("hwriter")`,
     `r pkg("knitr")`, `r pkg("lazyWeave")`,
+    `r pkg("table1")`,
     `r pkg("texreg")`, `r pkg("ztable")`
 -   *statistical models/methods* :
     `r pkg("gtsummary")`, `r pkg("rapport")`,
