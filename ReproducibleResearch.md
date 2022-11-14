@@ -7,7 +7,6 @@ version: 2022-11-14
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
-
 The goal of reproducible research is to tie specific instructions to
 data analysis and experimental data so that scholarship can be
 recreated, understood, and verified. Packages in R for this
@@ -19,8 +18,7 @@ The current maintainers gratefully acknowledge
 [Max Kuhn](https://github.com/topepo)
 for originally creating and maintaining this task view.
 
-Literate Programming
-====================
+# Literate Programming
 
 The primary way that R facilitates reproducible research is using a
 document that is a combination of content and data analysis code. The
@@ -34,8 +32,7 @@ embedding R code into various markups.
 The resources for literate programming are best organized by the
 document type/markup language:
 
-LaTeX
------
+## LaTeX
 
 Both `Sweave` and `r pkg("knitr")` can process LaTeX files.
 `r pkg("lazyWeave")` can create LaTeX documents from
@@ -48,46 +45,45 @@ class.
 
 Object Conversion Functions:
 
--   *summary tables/statistics* :
-    `r pkg("gtsummary")`,
-    `r pkg("Hmisc", priority = "core")`,
-    `r pkg("NMOF")`, `r pkg("papeR")`,
-    `r pkg("quantreg")`, `r pkg("rapport")`,
-    `r pkg("reporttools")`, `r pkg("sparktex")`,
-    `r pkg("table1")`,
-    `r pkg("tables")`,
-    `r pkg("xtable", priority = "core")`,
-    `r pkg("ztable")`
--   *tables/cross-tabulations* :
-    `r pkg("gtsummary")`, `r pkg("Hmisc")`,
-    `r pkg("huxtable")`, `r pkg("lazyWeave")`,
-    `r pkg("knitLatex")`, `r pkg("knitr")`,
-    `r pkg("reporttools")`,
-    `r pkg("table1")`,
-    `r pkg("ztable")`
--   *graphics* : `r pkg("animation")`,
-    `r pkg("Hmisc")`, `grDevices:::pictex`,
-    `r pkg("sparktex")`, `r pkg("tikzDevice")`
--   *statistical models/methods* :
-    `r pkg("gtsummary")`,
-    `r pkg("memisc")`, `r pkg("quantreg")`,
-    `r pkg("rms", priority = "core")`,
-    `r pkg("stargazer")`, `r pkg("suRtex")`,
-    `r pkg("texreg")`, `r pkg("xtable")`,
-    `r pkg("ztable")`
--   *bibtex* : `r pkg("bibtex")` and
-    `r pkg("RefManageR")`
--   *others* : `r pkg("latex2exp")` converts LaTeX equations
-    to `plotmath` expressions.
+- *summary tables/statistics*:
+  `r pkg("gtsummary")`,
+  `r pkg("Hmisc", priority = "core")`,
+  `r pkg("NMOF")`, `r pkg("papeR")`,
+  `r pkg("quantreg")`, `r pkg("rapport")`,
+  `r pkg("reporttools")`, `r pkg("sparktex")`,
+  `r pkg("table1")`,
+  `r pkg("tables")`,
+  `r pkg("xtable", priority = "core")`,
+  `r pkg("ztable")`
+- *tables/cross-tabulations*:
+  `r pkg("gtsummary")`, `r pkg("Hmisc")`,
+  `r pkg("huxtable")`, `r pkg("lazyWeave")`,
+  `r pkg("knitLatex")`, `r pkg("knitr")`,
+  `r pkg("reporttools")`,
+  `r pkg("table1")`,
+  `r pkg("ztable")`
+- *graphics*: `r pkg("animation")`,
+  `r pkg("Hmisc")`, `grDevices:::pictex`,
+  `r pkg("sparktex")`, `r pkg("tikzDevice")`
+- *statistical models/methods*:
+  `r pkg("gtsummary")`,
+  `r pkg("memisc")`, `r pkg("quantreg")`,
+  `r pkg("rms", priority = "core")`,
+  `r pkg("stargazer")`, `r pkg("suRtex")`,
+  `r pkg("texreg")`, `r pkg("xtable")`,
+  `r pkg("ztable")`
+- *bibtex*: `r pkg("bibtex")` and
+  `r pkg("RefManageR")`
+- *others*: `r pkg("latex2exp")` converts LaTeX equations
+  to `plotmath` expressions.
 
 Miscellaneous Tools
 
--   `r pkg("Hmisc")` contains a function to correctly escape
-    special characters. Standardized exams can be created using the
-    `r pkg("exams")` package.
+- `r pkg("Hmisc")` contains a function to correctly escape
+  special characters. Standardized exams can be created using the
+  `r pkg("exams")` package.
 
-HTML
-----
+## HTML
 
 The `r pkg("knitr")` package can process HTML files
 directly. `Sweave` can also work with HTML by way of the
@@ -109,32 +105,31 @@ can create entire websites.
 
 Object Conversion Functions:
 
--   *summary tables/statistics* :
-    `r pkg("gtsummary")`,
-    `r pkg("parameters")`,
-    `r pkg("stargazer")`,
-    `r pkg("table1")`
--   *tables/cross-tabulations* : `r pkg("DT")`,
-    `r pkg("flextable")`,
-    `r pkg("formattable")`, `r pkg("gt")`,
-    `r pkg("gtsummary")`,
-    `r pkg("htmlTable")`, `r pkg("HTMLUtils")`,
-    `r pkg("huxtable")`, `r pkg("hwriter")`,
-    `r pkg("knitr")`, `r pkg("lazyWeave")`,
-    `r pkg("table1")`,
-    `r pkg("texreg")`, `r pkg("ztable")`
--   *statistical models/methods* :
-    `r pkg("gtsummary")`, `r pkg("rapport")`,
-    `r pkg("stargazer")`, `r pkg("xtable")`
--   *others* : `r pkg("knitcitations")`,
-    `r pkg("RefManageR")`
+- *summary tables/statistics*:
+  `r pkg("gtsummary")`,
+  `r pkg("parameters")`,
+  `r pkg("stargazer")`,
+  `r pkg("table1")`
+- *tables/cross-tabulations*: `r pkg("DT")`,
+  `r pkg("flextable")`,
+  `r pkg("formattable")`, `r pkg("gt")`,
+  `r pkg("gtsummary")`,
+  `r pkg("htmlTable")`, `r pkg("HTMLUtils")`,
+  `r pkg("huxtable")`, `r pkg("hwriter")`,
+  `r pkg("knitr")`, `r pkg("lazyWeave")`,
+  `r pkg("table1")`,
+  `r pkg("texreg")`, `r pkg("ztable")`
+- *statistical models/methods*:
+  `r pkg("gtsummary")`, `r pkg("rapport")`,
+  `r pkg("stargazer")`, `r pkg("xtable")`
+- *others*: `r pkg("knitcitations")`,
+  `r pkg("RefManageR")`
 
 Miscellaneous Tools: `r pkg("htmltools")` has various tools
 for working with HTML. `r pkg("tufterhandout")` can create
 Tufte-style handouts.
 
-Markdown
---------
+## Markdown
 
 The `r pkg("knitr")` package can process markdown files
 without assistance. The packages `r pkg("markdown")` and
@@ -146,25 +141,24 @@ markdown format documents from scratch. Also, the
 
 Object Conversion Functions:
 
--   *summary tables/statistics* : `r pkg("gtsummary")`, `r pkg("papeR")`
--   *tables/cross-tabulations* : `r pkg("DT")`,
-    `r pkg("formattable")`,
-    `r pkg("gtsummary")`,
-    `r pkg("htmlTable")`, `r pkg("knitr")`,
-    `r pkg("lazyWeave")`, `r pkg("papeR")`,
-    `r pkg("parameters")`
--   *statistical models/methods* :
-    `r pkg("gtsummary")`, `r pkg("pander")`,
-    `r pkg("papeR")`, `r pkg("rapport")`,
-    `r pkg("texreg")`
--   *others* : `r pkg("RefManageR")`
+- *summary tables/statistics*: `r pkg("gtsummary")`, `r pkg("papeR")`
+- *tables/cross-tabulations*: `r pkg("DT")`,
+  `r pkg("formattable")`,
+  `r pkg("gtsummary")`,
+  `r pkg("htmlTable")`, `r pkg("knitr")`,
+  `r pkg("lazyWeave")`, `r pkg("papeR")`,
+  `r pkg("parameters")`
+- *statistical models/methods*:
+  `r pkg("gtsummary")`, `r pkg("pander")`,
+  `r pkg("papeR")`, `r pkg("rapport")`,
+  `r pkg("texreg")`
+- *others*: `r pkg("RefManageR")`
 
 Miscellaneous Tools: `r pkg("tufterhandout")` can create
 Tufte-style handouts. `r pkg("kfigr")` allows for figure
 indexing in markdown documents.
 
-Microsoft/LibreOffice Formats
------------------------------
+## Microsoft/LibreOffice Formats
 
 The `r pkg("officer")` (formerly ReporteRs and before that
 R2DOCX) package can create `docx` and
@@ -179,14 +173,13 @@ Spreadsheets.
 
 Object Conversion Functions:
 
--   *tables/cross-tabulations* : `r pkg("flextable")`,
-    `r pkg("huxtable")`, `r pkg("pharmaRTF")`,
-    `r pkg("r2rtf")`
--   *graphics* : `r pkg("mschart")`
--   *others* : `r pkg("unrtf")`
+- *tables/cross-tabulations*: `r pkg("flextable")`,
+  `r pkg("huxtable")`, `r pkg("pharmaRTF")`,
+  `r pkg("r2rtf")`
+- *graphics*: `r pkg("mschart")`
+- *others*: `r pkg("unrtf")`
 
-Pipeline Toolkits
-=================
+# Pipeline Toolkits
 
 [Pipeline toolkits](https://github.com/pditommaso/awesome-pipeline) help
 maintain and verify reproducibility. They synchronize computational
@@ -198,25 +191,24 @@ analysis project does not need to rerun from scratch. The
 similar to [GNU Make](https://www.gnu.org/software/make/) , but it is
 R-focused.
 
--   `r pkg("drake")`: A general-purpose computational engine
-    for data analysis, drake rebuilds intermediate data objects when
-    their dependencies change, and it skips work when the results are
-    already up to date.
--   `r pkg("flowr")`: This framework allows you to design
-    and implement complex pipelines, and deploy them on your
-    institution's computing cluster.
--   `r pkg("makepipe")`: A suite of tools for transforming
-    an existing workflow into a self-documenting pipeline with very
-    minimal upfront costs.
--   `r pkg("repo")`: A data manager meant to avoid manual
-    storage/retrieval of data to/from the file system.
--   `r pkg("targets")`: As a pipeline toolkit for Statistics
-    and data science in R, the 'targets' package brings together
-    function-oriented programming and 'Make'-like declarative
-    workflows.
+- `r pkg("drake")`: A general-purpose computational engine
+  for data analysis, drake rebuilds intermediate data objects when
+  their dependencies change, and it skips work when the results are
+  already up to date.
+- `r pkg("flowr")`: This framework allows you to design
+  and implement complex pipelines, and deploy them on your
+  institution's computing cluster.
+- `r pkg("makepipe")`: A suite of tools for transforming
+  an existing workflow into a self-documenting pipeline with very
+  minimal upfront costs.
+- `r pkg("repo")`: A data manager meant to avoid manual
+  storage/retrieval of data to/from the file system.
+- `r pkg("targets")`: As a pipeline toolkit for Statistics
+  and data science in R, the 'targets' package brings together
+  function-oriented programming and 'Make'-like declarative
+  workflows.
 
-Package Reproducibility
-=======================
+# Package Reproducibility
 
 R has various tools for ensuring that specific packages versions can be
 required for analyses. As an example, the `r pkg("renv")`
@@ -224,32 +216,31 @@ package installs packages in project-specific directory, records
 "snapshots" of the current package versions in a "lockfile", and
 restores the package setup on a different machine.
 
--   `r pkg("checkpoint")`: Allows you to install packages as
-    they existed on CRAN on a specific snapshot date as if you had a
-    CRAN time machine.
--   `r pkg("groundhog")`: Make R scripts that rely on
-    packages reproducible, by ensuring that every time a given script is
-    run, the same version of the used packages are loaded.
--   `r pkg("liftr")`: Persistent reproducible reporting by
-    containerization of R Markdown documents.
--   `r pkg("miniCRAN")`: Makes it possible to create an
-    internally consistent repository consisting of selected packages
-    from CRAN-like repositories.
--   `r pkg("packrat")`: Manage the R packages your project
-    depends on in an isolated, portable, and reproducible way.
--   `r pkg("renv")`: Create and manage project-local R
-    libraries, save the state of these libraries to a 'lockfile', and
-    later restore your library as required.
--   `r pkg("Require")`: A single key function, 'Require'
-    that wraps 'install.packages', 'remotes::install\_github',
-    'versions::install.versions', and 'base::require' that allows
-    for reproducible workflows.
--   `r pkg("switchr")`: Provides an abstraction for
-    managing, installing, and switching between sets of installed R
-    packages.
+- `r pkg("checkpoint")`: Allows you to install packages as
+  they existed on CRAN on a specific snapshot date as if you had a
+  CRAN time machine.
+- `r pkg("groundhog")`: Make R scripts that rely on
+  packages reproducible, by ensuring that every time a given script is
+  run, the same version of the used packages are loaded.
+- `r pkg("liftr")`: Persistent reproducible reporting by
+  containerization of R Markdown documents.
+- `r pkg("miniCRAN")`: Makes it possible to create an
+  internally consistent repository consisting of selected packages
+  from CRAN-like repositories.
+- `r pkg("packrat")`: Manage the R packages your project
+  depends on in an isolated, portable, and reproducible way.
+- `r pkg("renv")`: Create and manage project-local R
+  libraries, save the state of these libraries to a 'lockfile', and
+  later restore your library as required.
+- `r pkg("Require")`: A single key function, 'Require'
+  that wraps 'install.packages', 'remotes::install\_github',
+  'versions::install.versions', and 'base::require' that allows
+  for reproducible workflows.
+- `r pkg("switchr")`: Provides an abstraction for
+  managing, installing, and switching between sets of installed R
+  packages.
 
-Project Workflows
-=================
+# Project Workflows
 
 Successfully completing a data analysis project often requires much more
 than statistics and visualizations. Efficiently managing the code, data,
@@ -262,23 +253,23 @@ project infrastructure or solve a specific problem. As a typical
 example, `usethis::use_git()` initializes a Git repository, ignores
 common R files, and commits all project files.
 
--   `r pkg("cabinets")`: Creates project specific directory
-    and file templates that are written to a .Rprofile file.
--   `r pkg("here")`: Constructs paths to your project's
-    files.
--   `r pkg("prodigenr")`: Create a project directory
-    structure, along with typical files for that project.
--   `r pkg("RepoGenerator")`: Generates a project and repo
-    for easy initialization of a GitHub repo for R workshops.
--   rrtools ( [GitHub only](https://github.com/benmarwick/rrtools) ):
-    Instructions, templates, and functions for making a basic compendium
-    suitable for doing reproducible research with R.
--   starters ( [GitHub only](https://github.com/lockedata/starters) ):
-    Setting up R project directories for teaching, presenting, analysis,
-    package development can be a pain. starters shortcuts this by
-    creating folder structures and setting good defaults for you.
--   `r pkg("usethis")`: Automate package and project setup
-    tasks that are otherwise performed manually.
+- `r pkg("cabinets")`: Creates project specific directory
+  and file templates that are written to a .Rprofile file.
+- `r pkg("here")`: Constructs paths to your project's
+  files.
+- `r pkg("prodigenr")`: Create a project directory
+  structure, along with typical files for that project.
+- `r pkg("RepoGenerator")`: Generates a project and repo
+  for easy initialization of a GitHub repo for R workshops.
+- rrtools ( [GitHub only](https://github.com/benmarwick/rrtools) ):
+  Instructions, templates, and functions for making a basic compendium
+  suitable for doing reproducible research with R.
+- starters ( [GitHub only](https://github.com/lockedata/starters) ):
+  Setting up R project directories for teaching, presenting, analysis,
+  package development can be a pain. starters shortcuts this by
+  creating folder structures and setting good defaults for you.
+- `r pkg("usethis")`: Automate package and project setup
+  tasks that are otherwise performed manually.
 
 Workflow framework packages provide an organized directory structure and
 helper functions to assist during the development of the project. As a
@@ -287,50 +278,49 @@ organized setup with many subdirectories, and
 `ProjectTemplate::run.project()` executes each R script that is saved in
 the `src/` subdirectory.
 
--   `r pkg("exreport")`: Analysis of experimental results
-    and automatic report generation in both interactive HTML and LaTeX.
--   `r pkg("madrat")`: Provides a framework which should
-    improve reproducibility and transparency in data processing. It
-    provides functionality such as automatic meta data creation and
-    management, rudimentary quality management, data caching, work-flow
-    management and data aggregation.
--   `r pkg("makeProject")`: This package creates an empty
-    framework of files and directories for the "Load, Clean, Func, Do"
-    structure described by Josh Reich.
--   `r pkg("orderly")`: Order, create and store reports
-    from R.
--   `r pkg("projects")`: Provides a project infrastructure
-    with a focus on manuscript creation.
--   `r pkg("ProjectTemplate")`: Provides functions to
-    automatically build a directory structure for a new R project. Using
-    this structure, 'ProjectTemplate' automates data loading,
-    preprocessing, library importing and unit testing.
--   `r pkg("reportfactory")`: Provides an infrastructure for
-    handling multiple R Markdown reports, including automated curation
-    and time-stamping of outputs, parameterisation and provision of
-    helper functions to manage dependencies.
--   `r pkg("represtools")`: Reproducible research tools
-    automates the creation of an analysis directory structure and work
-    flow. There are R markdown skeletons which encapsulate typical
-    analytic work flow steps. Functions will create appropriate modules
-    which may pass data from one step to another.
--   `r pkg("tinyProject")`: Creates useful files and folders
-    for data analysis projects and provides functions to manage data,
-    scripts and output files.
--   `r pkg("worcs")`: Create reproducible and transparent
-    research projects in 'R'. This package is based on the Workflow
-    for Open Reproducible Code in Science (WORCS), a step-by-step
-    procedure based on best practices for Open Science.
--   `r pkg("workflowr")`: Provides a workflow for your
-    analysis projects by combining literate programming ('knitr' and
-    'rmarkdown') and version control ('Git', via 'git2r') to
-    generate a website containing time-stamped, versioned, and
-    documented results.
--   `r pkg("zoon")`: Reproducible and remixable species
-    distribution modelling.
+- `r pkg("exreport")`: Analysis of experimental results
+  and automatic report generation in both interactive HTML and LaTeX.
+- `r pkg("madrat")`: Provides a framework which should
+  improve reproducibility and transparency in data processing. It
+  provides functionality such as automatic meta data creation and
+  management, rudimentary quality management, data caching, work-flow
+  management and data aggregation.
+- `r pkg("makeProject")`: This package creates an empty
+  framework of files and directories for the "Load, Clean, Func, Do"
+  structure described by Josh Reich.
+- `r pkg("orderly")`: Order, create and store reports
+  from R.
+- `r pkg("projects")`: Provides a project infrastructure
+  with a focus on manuscript creation.
+- `r pkg("ProjectTemplate")`: Provides functions to
+  automatically build a directory structure for a new R project. Using
+  this structure, 'ProjectTemplate' automates data loading,
+  preprocessing, library importing and unit testing.
+- `r pkg("reportfactory")`: Provides an infrastructure for
+  handling multiple R Markdown reports, including automated curation
+  and time-stamping of outputs, parameterisation and provision of
+  helper functions to manage dependencies.
+- `r pkg("represtools")`: Reproducible research tools
+  automates the creation of an analysis directory structure and work
+  flow. There are R markdown skeletons which encapsulate typical
+  analytic work flow steps. Functions will create appropriate modules
+  which may pass data from one step to another.
+- `r pkg("tinyProject")`: Creates useful files and folders
+  for data analysis projects and provides functions to manage data,
+  scripts and output files.
+- `r pkg("worcs")`: Create reproducible and transparent
+  research projects in 'R'. This package is based on the Workflow
+  for Open Reproducible Code in Science (WORCS), a step-by-step
+  procedure based on best practices for Open Science.
+- `r pkg("workflowr")`: Provides a workflow for your
+  analysis projects by combining literate programming ('knitr' and
+  'rmarkdown') and version control ('Git', via 'git2r') to
+  generate a website containing time-stamped, versioned, and
+  documented results.
+- `r pkg("zoon")`: Reproducible and remixable species
+  distribution modelling.
 
-Formatting Tools
-================
+# Formatting Tools
 
 `r pkg("formatR")` and `r pkg("styler")` can be
 used to format R code.
@@ -342,8 +332,7 @@ Packages `r pkg("humanFormat")`,
 `r pkg("lubridate")`, `r pkg("prettyunits")`,
 and `r pkg("rprintf")` have functions to better format data.
 
-Format Convertors
-=================
+# Format Convertors
 
 `r pkg("pander")` can be used for rendering R objects into
 [Pandoc's](http://pandoc.org/) markdown. `r pkg("knitr")`
@@ -352,8 +341,7 @@ version of [Pandoc](http://pandoc.org/) to convert documents between
 formats such as Markdown, HTML, LaTeX, PDF and Word.
 `r pkg("tth")` facilitates TeX to HTML/MathML conversions.
 
-Object Caching Packages
-=======================
+# Object Caching Packages
 
 When using `Sweave` and `r pkg("knitr")` it can be
 advantageous to *cache* the results of time consuming code chunks if the
@@ -367,24 +355,25 @@ Non-literate programming packages to facilitate caching/archiving are
 `r pkg("reproducible")`, and `r pkg("storr")`
 
 ### Links
--   [Sweave: Dynamic Generation of Statistical Reports Using Literate Data Analysis](https://doi.org/10.1007/978-3-642-57489-4_89)
--   [knitr: Elegant, flexible and fast dynamic report generation with R](http://yihui.name/knitr/)
--   [Wikipedia: Literate Programming](http://en.wikipedia.org/wiki/Literate_Programming)
--   [Harrell: Reproducible Research (Biostatistics for Biomedical Research)](https://hbiostat.org/rr)
--   [Koenker, Zeileis: On Reproducible Econometric Research](http://www.econ.uiuc.edu/~roger/research/repro/)
--   [Peng: Reproducible Research and Biostatistics](https://doi.org/10.1093/biostatistics/kxp014)
--   [Rossini, Leisch: Literate Statistical Practice](https://biostats.bepress.com/uwbiostat/paper194)
--   [Baggerly, Coombes: Deriving Chemosensitivity from Cell Lines: Forensic Bioinformatics and Reproducible Research in High-Throughput Biology](http://dx.doi.org/10.1214/09-AOAS291)
--   [Leisch: Sweave, Part I: Mixing R and LaTeX](https://www.R-project.org/doc/Rnews/Rnews_2002-3.pdf)
--   [Leisch: Sweave, Part II: Package Vignettes](https://www.R-project.org/doc/Rnews/Rnews_2003-2.pdf)
--   [Betebenner: Using Control Structures with Sweave](https://www.R-project.org/doc/Rnews/Rnews_2005-1.pdf)
--   [Garbade, Burgard: Using R/Sweave in Everyday Clinical Practice](https://www.R-project.org/doc/Rnews/Rnews_2006-2.pdf)
--   [Gorjanc: Using Sweave with LyX](https://www.R-project.org/doc/Rnews/Rnews_2008-1.pdf)
--   [Lecoutre: The R2HTML Package](https://www.R-project.org/doc/Rnews/Rnews_2003-3.pdf)
--   [List of pipeline toolkits](https://github.com/pditommaso/awesome-pipeline)
--   [Computational Environments and Reproducibility](https://github.com/o2r-project/ctv-computational-environments#readme)
--   [Bryan: Project-oriented workflow](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/)
--   [rOpenSci: Reproducibility in Science](https://ropensci-archive.github.io/reproducibility-guide/)
--   [Temple Lang, Gentleman: Statistical Analyses and Reproducible Research](https://doi.org/10.1198/106186007X178663)
--   [Marwick, Boettiger, Mullen: Packaging Data Analytical Work Reproducibly Using R (and Friends)](https://doi.org/10.1080/00031305.2017.1375986)
--   [Xie: Write An R Package Using Literate Programming Techniques](https://yihui.org/rlp/)
+
+- [Sweave: Dynamic Generation of Statistical Reports Using Literate Data Analysis](https://doi.org/10.1007/978-3-642-57489-4_89)
+- [knitr: Elegant, flexible and fast dynamic report generation with R](http://yihui.name/knitr/)
+- [Wikipedia: Literate Programming](http://en.wikipedia.org/wiki/Literate_Programming)
+- [Harrell: Reproducible Research (Biostatistics for Biomedical Research)](https://hbiostat.org/rr)
+- [Koenker, Zeileis: On Reproducible Econometric Research](http://www.econ.uiuc.edu/~roger/research/repro/)
+- [Peng: Reproducible Research and Biostatistics](https://doi.org/10.1093/biostatistics/kxp014)
+- [Rossini, Leisch: Literate Statistical Practice](https://biostats.bepress.com/uwbiostat/paper194)
+- [Baggerly, Coombes: Deriving Chemosensitivity from Cell Lines: Forensic Bioinformatics and Reproducible Research in High-Throughput Biology](http://dx.doi.org/10.1214/09-AOAS291)
+- [Leisch: Sweave, Part I: Mixing R and LaTeX](https://www.R-project.org/doc/Rnews/Rnews_2002-3.pdf)
+- [Leisch: Sweave, Part II: Package Vignettes](https://www.R-project.org/doc/Rnews/Rnews_2003-2.pdf)
+- [Betebenner: Using Control Structures with Sweave](https://www.R-project.org/doc/Rnews/Rnews_2005-1.pdf)
+- [Garbade, Burgard: Using R/Sweave in Everyday Clinical Practice](https://www.R-project.org/doc/Rnews/Rnews_2006-2.pdf)
+- [Gorjanc: Using Sweave with LyX](https://www.R-project.org/doc/Rnews/Rnews_2008-1.pdf)
+- [Lecoutre: The R2HTML Package](https://www.R-project.org/doc/Rnews/Rnews_2003-3.pdf)
+- [List of pipeline toolkits](https://github.com/pditommaso/awesome-pipeline)
+- [Computational Environments and Reproducibility](https://github.com/o2r-project/ctv-computational-environments#readme)
+- [Bryan: Project-oriented workflow](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/)
+- [rOpenSci: Reproducibility in Science](https://ropensci-archive.github.io/reproducibility-guide/)
+- [Temple Lang, Gentleman: Statistical Analyses and Reproducible Research](https://doi.org/10.1198/106186007X178663)
+- [Marwick, Boettiger, Mullen: Packaging Data Analytical Work Reproducibly Using R (and Friends)](https://doi.org/10.1080/00031305.2017.1375986)
+- [Xie: Write An R Package Using Literate Programming Techniques](https://yihui.org/rlp/)
