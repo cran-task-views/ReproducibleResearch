@@ -3,15 +3,15 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2022-11-11
+version: 2022-11-14
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
 
 The goal of reproducible research is to tie specific instructions to
 data analysis and experimental data so that scholarship can be
-recreated, better understood and verified. Packages in R for this
-purpose can be split into groups for: literate programming, pipeline
+recreated, understood, and verified. Packages in R for this
+purpose can be roughly split into groups for: literate programming, pipeline
 toolkits, package reproducibility, project workflows, code/data
 formatting tools, format convertors, and object caching.
 
@@ -78,7 +78,7 @@ Object Conversion Functions:
 -   *bibtex* : `r pkg("bibtex")` and
     `r pkg("RefManageR")`
 -   *others* : `r pkg("latex2exp")` converts LaTeX equations
-    to `             plotmath           ` expressions.
+    to `plotmath` expressions.
 
 Miscellaneous Tools
 
@@ -167,13 +167,13 @@ Microsoft/LibreOffice Formats
 -----------------------------
 
 The `r pkg("officer")` (formerly ReporteRs and before that
-R2DOCX) package can create `           docx         ` and
-`           pptx         ` files. `r pkg("R2wd")` (windows
+R2DOCX) package can create `docx` and
+`pptx` files. `r pkg("R2wd")` (windows
 only) can also create Word documents from scratch and
 `r pkg("R2PPT")` (also windows only) can create PowerPoint
 slides. The `r pkg("rtf")` package does the same for Rich
 Text Format documents. The `r pkg("openxlsx")` package
-creates `           xlsx         ` files. The
+creates `xlsx` files. The
 `r pkg("readODS")` package can read and write Open Document
 Spreadsheets.
 
@@ -347,7 +347,7 @@ Format Convertors
 
 `r pkg("pander")` can be used for rendering R objects into
 [Pandoc's](http://pandoc.org/) markdown. `r pkg("knitr")`
-has the function `           pandoc         ` that can call an installed
+has the function `pandoc` that can call an installed
 version of [Pandoc](http://pandoc.org/) to convert documents between
 formats such as Markdown, HTML, LaTeX, PDF and Word.
 `r pkg("tth")` facilitates TeX to HTML/MathML conversions.
