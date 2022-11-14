@@ -1,0 +1,21 @@
+name: Check Task View
+on:
+  push:
+    paths:
+      - 'ReproducibleResearch.md'
+  pull_request:
+    paths:
+      - 'ReproducibleResearch.md'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-22.04
+    name: Check Task View
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup r2u
+        run: sudo bash ci/setup-r2u.sh
+      - name: Install dependencies
+        run: sudo bash ci/install-dependencies.sh
+      - name: Check Task View
+        run: Rscript ci/check.R
