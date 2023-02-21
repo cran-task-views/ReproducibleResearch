@@ -19,3 +19,9 @@ jobs:
         run: sudo bash ci/install-dependencies.sh
       - name: Check Task View
         run: Rscript ci/check.R
+      - name: Upload HTML as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ReproducibleResearch.html
+          path: ReproducibleResearch.html
+          retention-days: 5
