@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2022-11-14
+version: 2023-02-21
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -229,6 +229,8 @@ restores the package setup on a different machine.
   from CRAN-like repositories.
 - `r pkg("packrat")`: Manage the R packages your project
   depends on in an isolated, portable, and reproducible way.
+- `r pkg("rang")`: Resolve the dependency graph of R packages at a specific time
+  point in order to reconstruct the R computational environment.
 - `r pkg("renv")`: Create and manage project-local R
   libraries, save the state of these libraries to a 'lockfile', and
   later restore your library as required.
