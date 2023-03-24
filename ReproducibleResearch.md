@@ -307,6 +307,10 @@ the `src/` subdirectory.
   flow. There are R markdown skeletons which encapsulate typical
   analytic work flow steps. Functions will create appropriate modules
   which may pass data from one step to another.
+- `r pkg("TAF")`: General framework to organize data, methods, and
+  results used in reproducible scientific analyses. A TAF analysis
+  consists of four scripts (data.R, model.R, output.R, report.R) that
+  are run sequentially.
 - `r pkg("tinyProject")`: Creates useful files and folders
   for data analysis projects and provides functions to manage data,
   scripts and output files.
