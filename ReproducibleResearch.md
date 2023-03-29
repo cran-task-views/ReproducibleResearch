@@ -198,6 +198,9 @@ R-focused.
 - `r pkg("flowr")`: This framework allows you to design
   and implement complex pipelines, and deploy them on your
   institution's computing cluster.
+- `r pkg("makeit")`: Run R scripts if needed, based on last modified
+  time. Implemented in base R with no additional software requirements,
+  organizational overhead, or structural requirements.
 - `r pkg("makepipe")`: A suite of tools for transforming
   an existing workflow into a self-documenting pipeline with very
   minimal upfront costs.
