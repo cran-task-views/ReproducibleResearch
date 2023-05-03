@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2023-03-24
+version: 2023-05-03
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
