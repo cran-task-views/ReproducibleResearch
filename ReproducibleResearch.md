@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2023-05-03
+version: 2023-08-07
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -273,6 +273,8 @@ common R files, and commits all project files.
   Setting up R project directories for teaching, presenting, analysis,
   package development can be a pain. starters shortcuts this by
   creating folder structures and setting good defaults for you.
+- `r pkg("trackdown")`: Collaborative writing and editing of R Markdown (or
+  Sweave) documents via Google Docs.
 - `r pkg("usethis")`: Automate package and project setup
   tasks that are otherwise performed manually.
 
