@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2023-08-07
+version: 2023-08-21
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -222,6 +222,9 @@ restores the package setup on a different machine.
 - `r pkg("checkpoint")`: Allows you to install packages as
   they existed on CRAN on a specific snapshot date as if you had a
   CRAN time machine.
+- `r pkg("dateback")`: Works like a virtual CRAN snapshot for source packages.
+  It automatically downloads and installs 'tar.gz' files with dependencies, all
+  of which were available on a specific day.
 - `r pkg("groundhog")`: Make R scripts that rely on
   packages reproducible, by ensuring that every time a given script is
   run, the same version of the used packages are loaded.
