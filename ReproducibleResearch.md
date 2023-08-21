@@ -240,10 +240,10 @@ restores the package setup on a different machine.
 - `r pkg("renv")`: Create and manage project-local R
   libraries, save the state of these libraries to a 'lockfile', and
   later restore your library as required.
-- `r pkg("Require")`: A single key function, 'Require'
-  that wraps 'install.packages', 'remotes::install\_github',
-  'versions::install.versions', and 'base::require' that allows
-  for reproducible workflows.
+- `r pkg("Require")`: A single key function, 'Require' that makes rerun-tolerant
+  versions of 'install.packages' and 'require' for CRAN packages, packages no
+  longer on CRAN (i.e., archived), specific versions of packages, and GitHub
+  packages.
 - `r pkg("switchr")`: Provides an abstraction for
   managing, installing, and switching between sets of installed R
   packages.
