@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2023-08-21
+version: 2023-09-14
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -272,6 +272,9 @@ common R files, and commits all project files.
 - rrtools ( [GitHub only](https://github.com/benmarwick/rrtools) ):
   Instructions, templates, and functions for making a basic compendium
   suitable for doing reproducible research with R.
+- `r pkg("starter")`: Get started with new projects by dropping a skeleton of a
+  new project into a new or existing directory, initialise git repositories, and
+  create reproducible environments with the 'renv' package
 - starters ( [GitHub only](https://github.com/lockedata/starters) ):
   Setting up R project directories for teaching, presenting, analysis,
   package development can be a pain. starters shortcuts this by
