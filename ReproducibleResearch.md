@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2023-09-14
+version: 2023-09-18
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -334,8 +334,6 @@ the `src/` subdirectory.
   'rmarkdown') and version control ('Git', via 'git2r') to
   generate a website containing time-stamped, versioned, and
   documented results.
-- `r pkg("zoon")`: Reproducible and remixable species
-  distribution modelling.
 
 # Formatting Tools
 
