@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2023-09-18
+version: 2024-01-05
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -309,6 +309,9 @@ the `src/` subdirectory.
   automatically build a directory structure for a new R project. Using
   this structure, 'ProjectTemplate' automates data loading,
   preprocessing, library importing and unit testing.
+- `r pkg("rcompendium")`: Makes easier the creation of R package or research
+  compendium (i.e. a predefined files/folders structure) so that users can focus
+  on the code/analysis instead of wasting time organizing files.
 - `r pkg("reportfactory")`: Provides an infrastructure for
   handling multiple R Markdown reports, including automated curation
   and time-stamping of outputs, parameterisation and provision of
