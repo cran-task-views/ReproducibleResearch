@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2024-01-05
+version: 2024-02-20
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -36,7 +36,8 @@ document type/markup language:
 
 Both `Sweave` and `r pkg("knitr")` can process LaTeX files.
 `r pkg("lazyWeave")` can create LaTeX documents from
-scratch.
+scratch. `r pkg("RweaveExtra")` provides Sweave drivers with
+additional options to control processing and output.
 
 The `r pkg("knitr")` and `r pkg("rmarkdown")`
 packages (along with [pandoc](https://pandoc.org/) ) can be used to
