@@ -2,9 +2,13 @@ name: Check Task View
 on:
   push:
     paths:
+      - '.github/workflows/check.yaml'
+      - 'ci/**'
       - 'ReproducibleResearch.md'
   pull_request:
     paths:
+      - '.github/workflows/check.yaml'
+      - 'ci/**'
       - 'ReproducibleResearch.md'
   workflow_dispatch:
 jobs:
