@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2024-02-20
+version: 2024-06-14
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -396,3 +396,4 @@ Non-literate programming packages to facilitate caching/archiving are
 - [Temple Lang, Gentleman: Statistical Analyses and Reproducible Research](https://doi.org/10.1198/106186007X178663)
 - [Marwick, Boettiger, Mullen: Packaging Data Analytical Work Reproducibly Using R (and Friends)](https://doi.org/10.1080/00031305.2017.1375986)
 - [Xie: Write An R Package Using Literate Programming Techniques](https://yihui.org/rlp/)
+- [Rolland: Reproducible Research in R (and friends)](https://mjrolland.github.io/reproducibility-checklist/cheatsheet.html)
