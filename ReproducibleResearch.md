@@ -397,3 +397,4 @@ Non-literate programming packages to facilitate caching/archiving are
 - [Marwick, Boettiger, Mullen: Packaging Data Analytical Work Reproducibly Using R (and Friends)](https://doi.org/10.1080/00031305.2017.1375986)
 - [Xie: Write An R Package Using Literate Programming Techniques](https://yihui.org/rlp/)
 - [Rolland: Reproducible Research in R (and friends)](https://mjrolland.github.io/reproducibility-checklist/cheatsheet.html)
+- [Schratz: Reproducibility of parallel tasks in R](https://pat-s.me/reproducibility-when-going-parallel/)
