@@ -270,13 +270,13 @@ common R files, and commits all project files.
   structure, along with typical files for that project.
 - `r pkg("RepoGenerator")`: Generates a project and repo
   for easy initialization of a GitHub repo for R workshops.
-- rrtools ( [GitHub only](https://github.com/benmarwick/rrtools) ):
+- `r github("benmarwick/rrtools")` (GitHub only):
   Instructions, templates, and functions for making a basic compendium
   suitable for doing reproducible research with R.
 - `r pkg("starter")`: Get started with new projects by dropping a skeleton of a
   new project into a new or existing directory, initialise git repositories, and
   create reproducible environments with the 'renv' package
-- starters ( [GitHub only](https://github.com/lockedata/starters) ):
+- `r github("lockedata/starters")` (GitHub only):
   Setting up R project directories for teaching, presenting, analysis,
   package development can be a pain. starters shortcuts this by
   creating folder structures and setting good defaults for you.
