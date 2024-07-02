@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2024-06-14
+version: 2024-07-02
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -55,7 +55,8 @@ Object Conversion Functions:
   `r pkg("table1")`,
   `r pkg("tables")`,
   `r pkg("xtable", priority = "core")`,
-  `r pkg("ztable")`
+  `r pkg("ztable")`,
+  `r pkg("codebook")`
 - *tables/cross-tabulations*:
   `r pkg("gtsummary")`, `r pkg("Hmisc")`,
   `r pkg("huxtable")`, `r pkg("lazyWeave")`,
@@ -110,7 +111,8 @@ Object Conversion Functions:
   `r pkg("gtsummary")`,
   `r pkg("parameters")`,
   `r pkg("stargazer")`,
-  `r pkg("table1")`
+  `r pkg("table1")`,
+  `r pkg("codebook")`
 - *tables/cross-tabulations*: `r pkg("DT")`,
   `r pkg("flextable")`,
   `r pkg("formattable")`, `r pkg("gt")`,
@@ -174,6 +176,7 @@ Spreadsheets.
 
 Object Conversion Functions:
 
+- *summary tables/statistics*: `r pkg("codebook")`, `r pkg("codebookr")`
 - *tables/cross-tabulations*: `r pkg("flextable")`,
   `r pkg("huxtable")`, `r pkg("pharmaRTF")`,
   `r pkg("r2rtf")`
