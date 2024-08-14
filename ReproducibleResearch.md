@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2024-07-02
+version: 2024-08-14
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -202,6 +202,9 @@ R-focused.
 - `r pkg("flowr")`: This framework allows you to design
   and implement complex pipelines, and deploy them on your
   institution's computing cluster.
+- `r pkg("maestro")`: Framework for creating and orchestrating data pipelines.
+  Organize, orchestrate, and monitor multiple pipelines in a single project. Use
+  tags to decorate functions with scheduling parameters and configuration.
 - `r pkg("makeit")`: Run R scripts if needed, based on last modified
   time. Implemented in base R with no additional software requirements,
   organizational overhead, or structural requirements.
