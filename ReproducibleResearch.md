@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2024-08-14
+version: 2024-09-25
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -254,6 +254,8 @@ restores the package setup on a different machine.
   versions of 'install.packages' and 'require' for CRAN packages, packages no
   longer on CRAN (i.e., archived), specific versions of packages, and GitHub
   packages.
+- `r pkg("rix")`: Simplifies the creation of reproducible development
+  environments using the 'Nix' package manager.
 - `r pkg("switchr")`: Provides an abstraction for
   managing, installing, and switching between sets of installed R
   packages.
