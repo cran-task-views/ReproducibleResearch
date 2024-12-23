@@ -199,9 +199,6 @@ R-focused.
   for data analysis, drake rebuilds intermediate data objects when
   their dependencies change, and it skips work when the results are
   already up to date.
-- `r pkg("flowr")`: This framework allows you to design
-  and implement complex pipelines, and deploy them on your
-  institution's computing cluster.
 - `r pkg("maestro")`: Framework for creating and orchestrating data pipelines.
   Organize, orchestrate, and monitor multiple pipelines in a single project. Use
   tags to decorate functions with scheduling parameters and configuration.
