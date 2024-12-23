@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2024-09-25
+version: 2024-12-23
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -211,6 +211,9 @@ R-focused.
 - `r pkg("makepipe")`: A suite of tools for transforming
   an existing workflow into a self-documenting pipeline with very
   minimal upfront costs.
+- `r pkg("pipeflow")`: Offers a beginner-friendly framework that simplifies and
+  streamlines the development of data analysis pipelines by making them modular,
+  intuitive, and adaptable.
 - `r pkg("repo")`: A data manager meant to avoid manual
   storage/retrieval of data to/from the file system.
 - `r pkg("targets")`: As a pipeline toolkit for Statistics
