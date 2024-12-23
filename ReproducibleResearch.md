@@ -286,7 +286,7 @@ common R files, and commits all project files.
   suitable for doing reproducible research with R.
 - `r pkg("starter")`: Get started with new projects by dropping a skeleton of a
   new project into a new or existing directory, initialise git repositories, and
-  create reproducible environments with the 'renv' package
+  create reproducible environments with the 'renv' package.
 - `r github("lockedata/starters")` (GitHub only):
   Setting up R project directories for teaching, presenting, analysis,
   package development can be a pain. starters shortcuts this by
@@ -382,7 +382,7 @@ Bioconductor package `r bioc("weaver")` can be used with
 
 Non-literate programming packages to facilitate caching/archiving are
 `r pkg("archivist")`, `r pkg("R.cache")`,
-`r pkg("reproducible")`, and `r pkg("storr")`
+`r pkg("reproducible")`, and `r pkg("storr")`.
 
 ### Links
 
