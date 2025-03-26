@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2024-12-23
+version: 2025-03-26
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -71,7 +71,7 @@ Object Conversion Functions:
   `r pkg("gtsummary")`,
   `r pkg("memisc")`, `r pkg("quantreg")`,
   `r pkg("rms", priority = "core")`,
-  `r pkg("stargazer")`, `r pkg("suRtex")`,
+  `r pkg("stargazer")`,
   `r pkg("texreg")`, `r pkg("xtable")`,
   `r pkg("ztable")`
 - *bibtex*: `r pkg("bibtex")` and
