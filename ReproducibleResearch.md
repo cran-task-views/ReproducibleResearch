@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2025-03-26
+version: 2025-07-22
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -160,6 +160,8 @@ Object Conversion Functions:
 Miscellaneous Tools: `r pkg("tufterhandout")` can create
 Tufte-style handouts. `r pkg("kfigr")` allows for figure
 indexing in markdown documents.
+`r pkg("reproducibleRchunks")` can automatically check computational results
+from a `r pkg("knitr")` code chunk for reproducibility.
 
 ## Microsoft/LibreOffice Formats
 
