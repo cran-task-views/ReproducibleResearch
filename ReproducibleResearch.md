@@ -3,7 +3,7 @@ name: ReproducibleResearch
 topic: Reproducible Research
 maintainer: John Blischak, Alison Hill, Ben Marwick, Daniel Sjoberg, Will Landau
 email: jdblischak@gmail.com
-version: 2025-07-22
+version: 2025-08-21
 source: https://github.com/cran-task-views/ReproducibleResearch/
 ---
 
@@ -312,9 +312,6 @@ the `src/` subdirectory.
   provides functionality such as automatic meta data creation and
   management, rudimentary quality management, data caching, work-flow
   management and data aggregation.
-- `r pkg("makeProject")`: This package creates an empty
-  framework of files and directories for the "Load, Clean, Func, Do"
-  structure described by Josh Reich.
 - `r pkg("orderly")`: Order, create and store reports
   from R.
 - `r pkg("projects")`: Provides a project infrastructure
