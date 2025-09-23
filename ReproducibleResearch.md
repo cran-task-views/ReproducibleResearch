@@ -215,6 +215,8 @@ R-focused.
   intuitive, and adaptable.
 - `r pkg("repo")`: A data manager meant to avoid manual
   storage/retrieval of data to/from the file system.
+- `r pkg("rixpress")`: Leverage Nix to orchestrate fully polyglot reproducible
+  analytical pipelines across R, Python, and Julia.
 - `r pkg("targets")`: As a pipeline toolkit for Statistics
   and data science in R, the 'targets' package brings together
   function-oriented programming and 'Make'-like declarative
