@@ -278,6 +278,9 @@ common R files, and commits all project files.
   structure, along with typical files for that project.
 - `r pkg("RepoGenerator")`: Generates a project and repo
   for easy initialization of a GitHub repo for R workshops.
+- `r pkg("rmoriebricklayer")`: Records the provenance of each data source
+  (SHA-256 hash, schema, an archived copy in the Wayback Machine), signs it,
+  and builds bundles that rerun an analysis and check its outputs.
 - `r github("benmarwick/rrtools")` (GitHub only):
   Instructions, templates, and functions for making a basic compendium
   suitable for doing reproducible research with R.
